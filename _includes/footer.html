@@ -1,30 +1,92 @@
-<footer class="usa-footer site-footer" role="contentinfo">
-  <div class="footer-section-bottom bg-base-lighter">
+
+<footer class="usa-footer">
+  <div class="usa-footer__secondary-section" style="background-color:white;">
+    <nav class="usa-footer__nav" aria-label="Footer navigation">
+      <ul class="grid-row grid-gap" style="padding-left: 2rem;">
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="javascript:void(0);">Governance</a>
+        </li>
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="javascript:void(0);">Business Standards</a>
+        </li>
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="javascript:void(0);">QSMO</a>
+        </li>
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="javascript:void(0);">M3 Framework</a>
+        </li>
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="javascript:void(0);">About OSSPI</a>
+        </li>
+        <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+          <a class="usa-footer__primary-link" href="javascript:void(0);">Contact Us</a>
+        </li>
+      </ul>
+
+    </nav>
+  </div>
+
+  <div class="usa-footer__primary-section">
     <div class="grid-container">
-      <div class="grid-row padding-3">
-        <div class="tablet:grid-col">
-          <div class="logo-links">
-            <a class="footer-logo media_link" href="https://18f.gsa.gov">
-              {% asset logo-img.png width="50" alt="Agency logo" %}
-            </a>
+      <div class="grid-row grid-gap">
+        <div class="tablet:grid-col-8">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <div class="grid-row grid-gap-4">
+              <div class="mobile-lg:grid-col-6 desktop:grid-col-4">
+                <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                  <h4 class="usa-footer__primary-link">Related Websites</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link"><a href="https://cfo.gov">CFO.gov</a></li>
+                    <li class="usa-footer__secondary-link"><a href="https://cao.gov">CAO.gov</a></li>
+                    <li class="usa-footer__secondary-link"><a href="https://cio.gov">CIO.gov</a></li>
+                    <li class="usa-footer__secondary-link"><a href="https://pic.gov">PIC.gov</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="mobile-lg:grid-col-6 desktop:grid-col-4">
+                <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+
+                  <h4 class="usa-footer__primary-link">Resources</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link"> <a  href="{{ site.baseurl }}/assets/files/SQS-Public-FAQs-April-2020.pdf">Frequently Asked Questions</a></li>
+                    <li class="usa-footer__secondary-link"><a href="{{ site.baseurl}}/assets/files/QSMO-Long-term-Designation-Criteria.pdf">Designation Criteria</a></li>
+                    <li class="usa-footer__secondary-link"><a href="{{ site.baseurl}}/assets/files/Workforce-Strategies-Guide-4-11-19.pdf">Workforce Strategies Guide</a></li>
+                    <li class="usa-footer__secondary-link"><a  href="{{ site.baseurl}}/assets/files/Investment-Action-Plan-SOP-April-2019.pdf">Investment Action Plan</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="mobile-lg:grid-col-6 desktop:grid-col-4">
+                <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+
+                  <h4 class="usa-footer__primary-link">Website Information</h4>
+                  <ul class="usa-list usa-list--unstyled">
+                    <li class="usa-footer__secondary-link"><A HREF="http://www.gsa.gov/portal/content/116621">Accessibility Information</A></li>
+                    <li class="usa-footer__secondary-link"> <A HREF="http://www.gsa.gov/portal/category/21546">Budget and Performance</A></li>
+                    <li class="usa-footer__secondary-link"><A HREF="https://www.gsa.gov/reference/freedom-of-information-act-foia">FOIA</A></li>
+                    <li class="usa-footer__secondary-link"><A HREF="http://www.gsa.gov/portal/content/102469">No Fear ACT Data</A></li>
+                    <li class="usa-footer__secondary-link"><A HREF="http://www.gsa.gov/portal/content/104660">Office of the Inspector General</A></li>
+                    <li class="usa-footer__secondary-link"><A HREF="http://www.gsa.gov/portal/content/116609">Privacy Statement</A></li>
+                    <li class="usa-footer__secondary-link"><A HREF="http://www.usa.gov/">USA.gov</A></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="tablet:grid-col-4">
+          <div class="usa-sign-up">
+            <address>
+
+              <h3 class="usa-footer-contact-heading" style="text-align:right;color:#046b99;">Office of Shared Solutions and Performance Improvement</h3>
+
+
+              <p style="text-align:right;font-size:18px;"><a href="mailto:ussmteam@gsa.gov">ussmteam@gsa.gov</a></p>
+            </address>
+            <img src="/assets/images/gsa-logo-dark.jpg" style="width:120px;float:right;" alt="GSA Logo">
           </div>
-        </div>
-        <div class="tablet:grid-col"></div>
-        <div class="tablet:grid-col">
-          <ul class="add-list-reset">
-            <li>Footer link</li>
-            <li>Footer link</li>
-            <li>Footer link</li>
-          </ul>
-        </div>
-        <div class="tablet:grid-col">
-          <ul class="add-list-reset">
-            <li>Footer link</li>
-            <li>Footer link</li>
-            <li>Footer link</li>
-          </ul>
         </div>
       </div>
     </div>
   </div>
+
 </footer>

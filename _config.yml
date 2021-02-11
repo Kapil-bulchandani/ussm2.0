@@ -18,14 +18,13 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: Agency Name
-email: contact@example.gov
+title: USSM
+email: privacy.council@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
-  Agency Name (EAC) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Aenean et sapien a leo auctor scelerisque quis nec magna. Sed dictum ante a risus vehicula facilisis.
+  Official Website of the US Federal Privacy Council.
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "https://example.gov" # the base hostname & protocol for your site, e.g. http://example.com
-
+logo: /assets/images/placeholder-logo.gif
 # Twitter handle. Only the handle, not the URL.
 twitter: 18F
 
@@ -63,7 +62,7 @@ twitter: 18F
 #
 #################################################################
 dap:
-  # agency: your-agency
+   agency: GSA
 
   # Optional
   # subagency: your-subagency
@@ -74,28 +73,35 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: Home
-    url: /
-  - name: Blog
-    url: /blog/
-  - name: Document
-    url: /document/
-  - name: Document with sidenav
-    url: /document-with-sidenav/
-  - name: Document submenu
-    children:
-      - name: Navigation link
-        url: "#main-content"
-      - name: Navigation link
-        url: "#main-content"
-      - name: Navigation link
-        url: "#main-content"
+  - name: About Our Council
+    url: /vision-and-purpose/
+  - name: Federal Privacy Programs
+    url: /learn-about-federal-privacy-program/
+  - name: Programs & Events
+    url: /programs-and-events/
 
-secondary_navigation:
-  - name: Secondary link
-    url: "#main-content"
-  - name: Another secondary link
-    url: "#main-content"
+#secondary_navigation:
+#  - name: Secondary link
+#    url: "#main-content"
+#  - name: Another secondary link
+#    url: "#main-content"
+
+
+
+number_of_icons: 4
+homepage_icons:
+  - name: Law Library
+    logo: /assets/img/logos/law.svg
+    url: /law-library/
+  - name: Government-wide SORNs
+    logo: /assets/img/logos/dimension.svg
+    url: /resources/SORNs/
+  - name: OMB Guidance
+    logo: /assets/img/logos/settings.svg
+    url: /resources/omb/
+  - name: Glossary
+    logo: /assets/img/logos/dictionary.svg
+    url: /resources/glossary/
 
 # Search.gov configuration
 #
@@ -108,13 +114,13 @@ searchgov:
   endpoint: https://search.usa.gov
 
   # replace this with your search.gov account
-  affiliate: federalist-uswds-example
+  affiliate: fpc_gov
 
   # replace with your access key
   access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
 
   # this renders the results within the page instead of sending to user to search.gov
-  inline: true
+  inline: false
 
 ##########################################################################################
 # The values below here are more advanced and should only be
@@ -125,7 +131,8 @@ collections:
   pages:
     output: true
     permalink: /:path/
-
+  events:
+    output: true
 permalink: pretty
 
 markdown: kramdown
