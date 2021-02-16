@@ -88,21 +88,6 @@ primary_navigation:
 
 
 
-number_of_icons: 4
-homepage_icons:
-  - name: Law Library
-    logo: /assets/img/logos/law.svg
-    url: /law-library/
-  - name: Government-wide SORNs
-    logo: /assets/img/logos/dimension.svg
-    url: /resources/SORNs/
-  - name: OMB Guidance
-    logo: /assets/img/logos/settings.svg
-    url: /resources/omb/
-  - name: Glossary
-    logo: /assets/img/logos/dictionary.svg
-    url: /resources/glossary/
-
 # Search.gov configuration
 #
 # 1. Create an account with Search.gov https://search.usa.gov/signup
