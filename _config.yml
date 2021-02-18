@@ -116,9 +116,11 @@ collections:
   pages:
     output: true
     permalink: /:path/
-  events:
+  news-posts:
     output: true
-permalink: pretty
+  updates:
+    output: true
+
 
 markdown: kramdown
 plugins:
