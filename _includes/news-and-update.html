@@ -1,10 +1,10 @@
 <section class="grid-container usa-section" style="background-color:#FFFFFF;">
     <h2 class="text-primary" >News and Updates</h2>
     <div class="grid-row">
-        <div class="grid-col-6">
+        <div class="grid-col-6 min">
             <ul style="list-style-type: none; padding-left: 0;">
                 {% for news-posts in site.news-posts reversed limit:4 %}
-                <li class="margin-bottom-05"><img src="{{ site.baseurl }}/assets/images/project-icons/news.png" class="news">
+                <li class="margin-bottom-105"><img src="{{ site.baseurl }}/assets/images/project-icons/news.png" class="news">
                     <span class="date">
        <b>{{ news-posts.source }}</b><br>
      </span>
@@ -17,10 +17,10 @@
             </ul>
         </div>
 
-        <div class="grid-col-6">
+        <div class="grid-col-6 min">
             <ul style="list-style-type: none; padding-left: 0;">
                 {% for updates in site.updates reversed limit:4 %}
-                <li class="margin-bottom-05"><img src="{{ site.baseurl }}/assets/images/project-icons/update.png" class="news" >
+                <li class="margin-bottom-105"><img src="{{ site.baseurl }}/assets/images/project-icons/update.png" class="news" >
                     <span class="date">
    <b>{{ updates.date | date: '%B %d, %Y' }}</b><br>
  </span>
@@ -31,5 +31,4 @@
         </div>
     </div>
 </section>
-
 

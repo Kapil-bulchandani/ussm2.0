@@ -238,6 +238,8 @@ abbr{
 }
 
 
+
+
 @media screen and (max-width:600px) {  
   /* Style for video(s) text on home page slider*/
   .slick-cloned .text-right .padding-2, #navigation00 .text-right .padding-2, #navigation01 .text-right .padding-2, #navigation02 .text-right .padding-2, #navigation03 .text-right .padding-2{
@@ -246,6 +248,11 @@ abbr{
   }
   .slick-cloned .text-right, #navigation00 .text-right, #navigation01 .text-right,#navigation02 .text-right,#navigation03 .text-right{
     width: 16%;
+  }
+
+  .min{
+      flex: 0 1 auto;
+      width: 100%;
   }
 }
 
