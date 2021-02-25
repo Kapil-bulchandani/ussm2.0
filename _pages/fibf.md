@@ -1,0 +1,5 @@
+---
+layout: fibs
+permalink: /fibf/
+
+---
