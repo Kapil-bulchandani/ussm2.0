@@ -4,7 +4,7 @@
         <div class="grid-col-6 min">
             <ul style="list-style-type: none; padding-left: 0;">
                 {% for news-posts in site.news-posts reversed limit:4 %}
-                <li class="margin-bottom-105"><img src="{{ site.baseurl }}/assets/images/project-icons/news.png" class="news">
+                <li class="margin-bottom-105"><img src="{{ site.baseurl }}/assets/images/project-icons/news.png" class="news" alt="news icon">
                     <span class="date">
        <b>{{ news-posts.source }}</b><br>
      </span>
@@ -14,6 +14,7 @@
      </span>
 
                     {% endfor %}
+                </li>
             </ul>
         </div>
 
@@ -27,6 +28,7 @@
                     <a class="article" href="{{ updates.link }}" class="ext-link" rel"external no folow">{{ updates.title }}</a><br>
 
                     {% endfor %}
+                </li>
             </ul>
         </div>
     </div>
