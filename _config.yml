@@ -93,17 +93,28 @@ primary_navigation:
       - name: Electronic Records Management
         url: "/fibf-ERM/"
   - name: QSMO
-    url: "/qsmo/"
+    url: "/"
     children:
-      - name: External QSMO Websites
-        children:
-          - name: Cybersecurity Services
-            url: "/"
+      - name: QSMO
+        url: "/qsmo/"
   - name: M3 Framework
-    url: "/qsmo/"
+    url: "/"
     children:
-      - name: External QSMO Websites
-        url: "/"
+      - name: Overview
+        url: "/m3overview/"
+      - name: 'Phase 0: Assessment'
+        url: "/m3phase0/"
+      - name: 'Phase 1: Assessment'
+        url: "/m3phase1/"
+      - name: 'Phase 2: Assessment'
+        url: "/m3phase2/"
+      - name: 'Phase 3: Assessment'
+        url: "/m3phase3/"
+      - name: 'Phase 4: Assessment'
+        url: "/m3phase4/"
+      - name: 'Phase 5: Assessment'
+        url: "/m3phase5/"
+
   - name: About OSSPI
     url: "/about/"
 
