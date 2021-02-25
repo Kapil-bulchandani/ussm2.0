@@ -21,7 +21,7 @@
         <div class="grid-col-6 min">
             <ul style="list-style-type: none; padding-left: 0;">
                 {% for updates in site.updates reversed limit:4 %}
-                <li class="margin-bottom-105"><img src="{{ site.baseurl }}/assets/images/project-icons/update.png" class="news" >
+                <li class="margin-bottom-105"><img src="{{ site.baseurl }}/assets/images/project-icons/update.png" class="news" alt="update icon" >
                     <span class="date">
    <b>{{ updates.date | date: '%B %d, %Y' }}</b><br>
  </span>
