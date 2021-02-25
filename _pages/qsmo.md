@@ -1,0 +1,5 @@
+---
+layout: qsmo
+permalink: /qsmo/
+
+---
