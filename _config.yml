@@ -73,12 +73,51 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: About Our Council
-    url: /vision-and-purpose/
-  - name: Federal Privacy Programs
-    url: /learn-about-federal-privacy-program/
-  - name: Programs & Events
-    url: /programs-and-events/
+  - name: Governance
+    url: /governance/
+  - name: Business Standards
+    url: /
+    children:
+      - name: All Business Standards
+        url: "/fibf/"
+      - name: Financial Management
+        url: "/fibf-fm/"
+      - name: HR Management Services
+        url: "/fibf-hr/"
+      - name: Procurement
+        url: "/fibf-procurement/"
+      - name: Grants Management
+        url: "/fibf-gm/"
+      - name: Travel and Expense Management
+        url: "/fibf-travel/"
+      - name: Electronic Records Management
+        url: "/fibf-ERM/"
+  - name: QSMO
+    url: "/"
+    children:
+      - name: QSMO
+        url: "/qsmo/"
+  - name: M3 Framework
+    url: "/"
+    children:
+      - name: Overview
+        url: "/m3overview/"
+      - name: 'Phase 0: Assessment'
+        url: "/m3phase0/"
+      - name: 'Phase 1: Assessment'
+        url: "/m3phase1/"
+      - name: 'Phase 2: Assessment'
+        url: "/m3phase2/"
+      - name: 'Phase 3: Assessment'
+        url: "/m3phase3/"
+      - name: 'Phase 4: Assessment'
+        url: "/m3phase4/"
+      - name: 'Phase 5: Assessment'
+        url: "/m3phase5/"
+
+  - name: About OSSPI
+    url: "/about/"
+
 
 #secondary_navigation:
 #  - name: Secondary link

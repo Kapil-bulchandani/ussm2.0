@@ -26,26 +26,45 @@ where we provide an easy way to manage your navigation system
       <button class="usa-menu-btn">Menu</button>
     </div>
     <nav aria-label="Primary navigation" class="usa-nav">
-      <button class="usa-nav__close"><img src="{{ site.baseurl }}/assets/close-4b533eb734d44fe36838c1f03df0133e725b742bc97ed213f413d9e267410b99.svg" role="img" alt="close"></button>
-      <ul class="usa-nav__primary usa-accordion">
-        <li class="usa-nav__primary-item">
-          <a class="usa-nav__link" href="{{ site.baseurl }}/governance/"><span>Governance</span></a>
-        </li>
-        <li class="usa-nav__primary-item">
-          <a class="usa-nav__link" href="{{ site.baseurl }}/fibf/"><span>Business Standards</span></a>
-        </li>
-        <li class="usa-nav__primary-item">
-          <a class="usa-nav__link" href="{{ site.baseurl }}/qsmo/"><span>QSMO</span></a>
-        </li>
-        <li class="usa-nav__primary-item">
-          <a class="usa-nav__link" href="{{ site.baseurl }}/m3/"><span>M3 Framework</span></a>
-        </li>
-        <li class="usa-nav__primary-item">
-          <a class="usa-nav__link" href="{{ site.baseurl }}/about/"><span>About OSSPI</span></a>
-        </li>
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">{% asset close.svg alt="close" %}</button>
+        <ul class="usa-nav__primary usa-accordion"  >
+          {% for nav_item in include.primary_navigation %}
+          {% unless nav_item.children %}
+          {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
+          {% assign linkdir = nav_item.url |  replace: "/", ""  | lstrip %}
+          <li class="usa-nav__primary-item">
+            <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
+               href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name }}</span></a>
+          </li>
+          {% else %}
+          {% assign nav_id = 'primary-nav-' | append: forloop.index %}
+          <li class="usa-nav__primary-item">
+            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="{{ nav_id }}"><span
+                    class="header-menu-text">{{ nav_item.name | escape }}</span></button>
+            <ul id="{{ nav_id }}" class="usa-nav__submenu" hidden="">
+              {% for subnav_item in nav_item.children %}
+              <li class="usa-nav__submenu-item">
+                <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>
+              </li>
+              {% endfor %}
+            </ul>
 
-      </ul>
+          </li>
+          {% endunless %}
+          {% endfor %}
+        </ul>
+        <div class="usa-nav__secondary secondary-nav-padding">
+          <ul class="usa-nav__secondary-links">
+            {% for nav_item in include.secondary_navigation %}
+            <li class="usa-nav__secondary-item">
+              <a href="{{ nav_item.url  }}">{{ nav_item.name | escape }}</a>
+            </li>
+            {% endfor %}
+          </ul>
 
+        </div>
+      </div>
     </nav>
   </div>
 </header>
