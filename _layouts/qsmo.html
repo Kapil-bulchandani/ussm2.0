@@ -80,18 +80,17 @@ layout: base
     </div>
 </section>
 
-
-
 <a name="details">  </a>
-<section class="usa-graphic_list usa-section">
-    <div class="grid-container">
-        <div class="grid-col-12 ">
+
+<section class="usa-section usa-graphic_list">
+    <div class="usa-grid usa-graphic_list-row">
+        <div class="grid-container">
+        <div class="grid-row grid-gap">
             {% include qsmo-filter.html %}
             <!--********Generates policy catalog items. Individual cards live in the in the _policies folder**************-->
 
-
-            <div class="grid-col-9 usa-media-block ">
-                <p class="filter-count qsmo-tag"></p>
+            <div class="grid-col-9">
+                <p class="filter-count qsmo-tag margin-top-0 text-gray-50 text-thin"></p>
                 <div class="qsmos">
 
                     {% for qsmos in site.qsmos %}
@@ -117,6 +116,8 @@ layout: base
             </div>
 
         </div>
+        </div>
+    </div>
     </div>
 </section>
 
