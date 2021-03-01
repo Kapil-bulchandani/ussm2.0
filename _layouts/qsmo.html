@@ -80,22 +80,20 @@ layout: base
     </div>
 </section>
 
+<a name="details">  </a>
 
-
-
-<section class="usa-graphic_list usa-section">
+<section class="usa-graphic-list margin-bottom-4 margin-top-4">
     <div class="grid-container">
-        <div class="grid-col-12 ">
+        <div class="usa-graphic-list__row grid-row grid-gap">
             {% include qsmo-filter.html %}
             <!--********Generates policy catalog items. Individual cards live in the in the _policies folder**************-->
 
-            <a name="details">  </a>
-            <div class="grid-col-9 usa-media-block ">
-                <p class="filter-count qsmo-tag"></p>
+            <div class="tablet:grid-col-9">
+                <p class="filter-count qsmo-tag margin-top-0 text-gray-50 text-thin"></p>
                 <div class="qsmos">
 
                     {% for qsmos in site.qsmos %}
-                    <div class="usa-width-one-third qsmo {{ qsmos.filters }} " style="width:31%; margin-bottom:15px;">
+                    <div class="tablet:grid-col-4  grid-spacing qsmo {{ qsmos.filters }} " >
                         <div class="container-GoG" tabindex="0" style="background-color:#f9f9f9;padding:0px;#{{qsmos.border}} solid 2px; cursor:default">
                             <div style="background:#{{qsmos.border}};border-radius:10px 10px 0px 0px; padding:14px;">
                                 <span class="qsmo-tag" style="color:white">{{ qsmos.phase }}</span><br>
@@ -117,6 +115,8 @@ layout: base
             </div>
 
         </div>
+        </div>
+    </div>
     </div>
 </section>
 

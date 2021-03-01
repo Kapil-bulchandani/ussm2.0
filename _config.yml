@@ -159,6 +159,8 @@ collections:
     output: true
   updates:
     output: true
+  qsmos:
+    output: true
 
 
 markdown: kramdown
