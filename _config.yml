@@ -157,6 +157,8 @@ collections:
     permalink: /:path/
   news-posts:
     output: true
+  qsmos:
+    output: true
   updates:
     output: true
 
