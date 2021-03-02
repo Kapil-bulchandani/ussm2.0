@@ -45,16 +45,16 @@ layout: base
     <a name="who"></a>
 <div class="grid-container">
     <div class="grid-row">
-        <div class="tablet:grid-col border-right">
-           <center> <a class="hvr-sink" href="#who"style="text-decoration:none;"><h4 style="color:black; font-size:19px">Who are the QSMOs?</h4>
+        <div class="tablet:grid-col ">
+           <center> <a class="hvr-sink" href="#who"style="text-decoration:none;"><h4 style="color:black; ">Who are the QSMOs?</h4>
                <center><p><img src="../assets/images/project-icons/arrow-down.png" style="width:35px;"></p></center> </a></center>
         </div>
-        <div class="tablet:grid-col border-right ">
-            <center><a class=" hvr-sink" href="#what" style="text-decoration:none;"><h4 style="color:black; font-size:19px">What are QSMOs?</h4>
+        <div class="tablet:grid-col border-x ">
+            <center><a class=" hvr-sink" href="#what" style="text-decoration:none;"><h4 style="color:black;">What are QSMOs?</h4>
                 <center><p><img  src="../assets/images/project-icons/arrow-down.png" style="width:35px;"></p></center></a></center>
         </div>
-        <div class="tablet:grid-col border-last ">
-        <center><a class="hvr-sink" class="grow "href="#how" style="text-decoration:none;"><h4 style="color:black; font-size:19px padding-left: 20px;">How agencies get support from the QSMO?</h4>
+        <div class="tablet:grid-col  ">
+        <center><a class="hvr-sink" class="grow "href="#how" style="text-decoration:none;"><h4 style="color:black; ">How agencies get support from<br> the QSMO?</h4>
             <center><p><img  src="../assets/images/project-icons/arrow-down.png" style="width:35px;"></p></center></a></center>
         </div>
     </div>
@@ -80,22 +80,20 @@ layout: base
     </div>
 </section>
 
+<a name="details">  </a>
 
-
-
-<section class="usa-graphic_list usa-section">
+<section class="usa-graphic-list margin-bottom-4 margin-top-4">
     <div class="grid-container">
-        <div class="grid-col-12 ">
+        <div class="usa-graphic-list__row grid-row grid-gap">
             {% include qsmo-filter.html %}
             <!--********Generates policy catalog items. Individual cards live in the in the _policies folder**************-->
 
-            <a name="details">  </a>
-            <div class="grid-col-9 usa-media-block ">
-                <p class="filter-count qsmo-tag"></p>
+            <div class="tablet:grid-col-9">
+                <p class="filter-count qsmo-tag margin-top-0 text-gray-50 text-thin"></p>
                 <div class="qsmos">
 
                     {% for qsmos in site.qsmos %}
-                    <div class="usa-width-one-third qsmo {{ qsmos.filters }} " style="width:31%; margin-bottom:15px;">
+                    <div class="tablet:grid-col-4  grid-spacing qsmo {{ qsmos.filters }} " >
                         <div class="container-GoG" tabindex="0" style="background-color:#f9f9f9;padding:0px;#{{qsmos.border}} solid 2px; cursor:default">
                             <div style="background:#{{qsmos.border}};border-radius:10px 10px 0px 0px; padding:14px;">
                                 <span class="qsmo-tag" style="color:white">{{ qsmos.phase }}</span><br>
@@ -117,6 +115,8 @@ layout: base
             </div>
 
         </div>
+        </div>
+    </div>
     </div>
 </section>
 
@@ -124,11 +124,11 @@ layout: base
     <div class="grid-container">
         <div class="grid-row grid-gap">
 
-            <div class="grid-col-4">
+            <div class="tablet:grid-col-4">
                 <a name="what"></a>
                 <p class="text-primary" style="font-size: 20px"><strong> QSMOs offer modern technology and transaction processing solutions to drive scale, standardization and efficiency.</strong> </p>
             </div>
-        <div class="grid-col-8">
+        <div class="tablet:grid-col-8">
             <p >Housed in federal agencies with the mission and expertise to deliver standard capabilities for other agencies, QSMOs:</p>
             <ul>
                 <li>Offer and manage a marketplace of solutions for common technology, services, or fully managed services to respond to agency needs;</li>
@@ -202,14 +202,3 @@ layout: base
 <!--<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>-->
 <!--<script src="{{ site.baseurl }}/js/isotope.settings.js"></script>-->
 
-<style>
-    .border-last {
-    text-align: center;
-}
-
-.border-right {
-    border-right: 1px solid #aeb0b5;
-    text-align: center;
-    padding-right: 19px;
-}
-</style>
