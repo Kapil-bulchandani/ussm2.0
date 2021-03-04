@@ -246,6 +246,45 @@ color:#2A4294;
 	color: #008080;
 }
 
+.m3-table-title {
+  width: 75%;
+  display: block;
+}
+
+.m3-table   {
+  border-spacing: 0;
+  border: 1px solid #5b616b;
+  margin: 0em 0;
+  width: 75%;
+}
+
+.ActivityCellHeader {
+	background-color: #8c8c8c;
+}
+
+.ActivityTable {
+	border: 1x solid #8c8c8c;
+	border-spacing: 2px;
+}
+
+
+.ActivityTable td {
+	border: 1px solid #8c8c8c;
+	border-spacing: 2px;
+	vertical-align: top;
+}
+
+a {
+  color: #0071bc;
+  text-decoration: underline;
+}
+
+.ActivityCellHeaderTitle {
+	font-family: calibri;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: strong;
+}
 
 
 @media screen and (min-width: 600px) {
