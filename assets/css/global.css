@@ -187,4 +187,7 @@ span[role="link"]:focus {
 .usa-accordion li {
   margin-bottom: 0.5em; }
 
+#table_id_filter [type="search"] {
+  float: none; }
+
 /*# sourceMappingURL=global.css.map */
