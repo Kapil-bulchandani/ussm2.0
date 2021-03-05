@@ -12,4 +12,6 @@ lifecycle-source-document: https://www.fiscal.treasury.gov/files/fit/FMFunctions
 lifecycle-content: fm/lifecycle.html
 capabilities-content: fm/capabilities.html
 capabilities-source-document: https://tfm.fiscal.treasury.gov/v1/p6/c950.html
+use-cases-content: fm/use-cases.html
+data-elements-content: fm/data-elements.html
 ---
