@@ -2,6 +2,7 @@
 console.log("Hi from Federalist");
 jQuery(document).ready(function() {
    jQuery('#table_id').DataTable( {
+       responsive: true,
        dom: 'Bfrtip',
        buttons: [
            'copyHtml5',
