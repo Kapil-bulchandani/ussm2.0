@@ -13,21 +13,10 @@ The home page uses wide.html layout, since it extends full width of page
     <div class="grid-container">
         <div class="grid-row">
             <div class="tablet:grid-col">
-                <h1 class="text-primary" style="font-size: 30px;" > Governance Ecosystem</h1>
-<div style="">
-                    <p>The governance and operating model drives collaboration and change management with stakeholders across the federal government to identify solutions that deliver the best value to taxpayers and support efficient government.</p>
+                <h1 class="text-primary" style="font-size: 30px;" > {{ page.title }}</h1>
+<div>
+    {{ content }}
 
-                    <p><strong>The Shared Services Governance Chair</strong></p>
-
-                    <p>The SSGC is designated by the Office of Management and Budget (OMB) Director and has the responsibility, in conjunction with OMB offices, to lead the development and implementation of mission support shared services policy across the government. She/he also co-chairs the Shared Services Governance Board (SSGB).</p>
-
-                    <p><strong><a href="../ssgb">Shared Services Governance Board</a></strong></p>
-
-                    <p>The SSGB is comprised of representatives from the CXO councils and is responsible for making recommendations to OMB on potential sharing opportunities and for advising on the implementation of the designated activities. The SSGB will also serve as the escalation point for the Business Standards Council (BSC) to resolve inconsistencies in the creation of business and data standards or to suggest possible resolutions for OMB policy officials.</p>
-
-                    <p><strong>Business Standards Council</strong></p>
-
-                    <p>BSC is a cross-government team of practitioners and strategists that is designing an integrated end-to-end future state of mission support activities in collaboration with each CXO council and, as applicable, the authoritative governance bodies over the respective functional area. The standards will follow the <a href="../fibf">Federal Integrated Business Framework (FIBF)</a>.</p>
 </div>
             </div>
 
@@ -52,37 +41,11 @@ The home page uses wide.html layout, since it extends full width of page
       <div id="caption"></div>
     </div>
 
-    <script>
 
-      // Get the modal
-       var modal = document.getElementById('myModal');
-
-       // Get the image and insert it inside the modal - use its "alt" text as a caption
-       var img = document.getElementById('myImg');
-       var modalImg = document.getElementById("img01");
-       var captionText = document.getElementById("caption");
-       img.onclick = function(){
-         modal.style.display = "block";
-         modalImg.src = this.src;
-         captionText.innerHTML = this.alt;
-       }
-
-       // Get the <span> element that closes the modal
-       var span = document.getElementsByClassName("close")[0];
-
-       // When the user clicks on <span> (x), close the modal
-       span.onclick = function() {
-         modal.style.display = "none";
-     }
-
-    </script>
 
   <div>
   </div>
 </span>
-<!--                <p><b>Governance &amp; Operating Model</b></p>-->
-<!--                <img id="myImg" src="/assets/images/governance/governance-diagram-1.png" style="width:400px;padding-left:20px;" alt="Governance and operating model">-->
-
 
             </div>
 
