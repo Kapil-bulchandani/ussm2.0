@@ -34,33 +34,20 @@ where we provide an easy way to manage your navigation system
           {% for nav_item in include.primary_navigation %}
           {% unless nav_item.children %}
           {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
-          {% assign linkdir = nav_item.permalink |  replace: "/", ""  | lstrip %}
+          {% assign linkdir = nav_item.url |  replace: "/", ""  | lstrip %}
           <li class="usa-nav__primary-item">
             <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
-               href="{{ nav_item.permalink | prepend: site.baseurl}}"><span>{{ nav_item.text }}</span></a>
+               href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name }}</span></a>
           </li>
           {% else %}
           {% assign nav_id = 'primary-nav-' | append: forloop.index %}
           <li class="usa-nav__primary-item">
             <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="{{ nav_id }}"><span
-                    class="header-menu-text">{{ nav_item.text | escape }}</span></button>
+                    class="header-menu-text">{{ nav_item.name | escape }}</span></button>
             <ul id="{{ nav_id }}" class="usa-nav__submenu" hidden="">
               {% for subnav_item in nav_item.children %}
               <li class="usa-nav__submenu-item">
-                {% if subnav_item.link == false %}
-                <span class="navheader">{{ subnav_item.text | escape }}</span>
-                {% elsif subnav_item.tooltip %}
-                <a class="usa-tooltip" data-position="bottom" href="{% if subnav_item.external %}{{ subnav_item.permalink }}{% else %} {{ subnav_item.permalink | prepend: site.baseurl }} {% endif %}" title="{{ subnav_item.tooltip | escape }}">
-                  {{ subnav_item.text | escape }}
-                  {% if subnav_item.external %}
-                  <img src="{{site.baseurl}}/assets/images/external-link.png" style="width:12px; margin-left:10px;" alt="External Link"/>
-                  {% endif %}
-                </a>
-                {% else %}
-                <a href="{{ subnav_item.permalink | prepend: site.baseurl }}">
-                  {{ subnav_item.text | escape }}
-                </a>
-                {% endif %}
+                <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>
               </li>
               {% endfor %}
             </ul>
@@ -69,7 +56,16 @@ where we provide an easy way to manage your navigation system
           {% endunless %}
           {% endfor %}
         </ul>
+        <div class="usa-nav__secondary secondary-nav-padding">
+          <ul class="usa-nav__secondary-links">
+            {% for nav_item in include.secondary_navigation %}
+            <li class="usa-nav__secondary-item">
+              <a href="{{ nav_item.url  }}">{{ nav_item.name | escape }}</a>
+            </li>
+            {% endfor %}
+          </ul>
 
+        </div>
       </div>
     </nav>
 
