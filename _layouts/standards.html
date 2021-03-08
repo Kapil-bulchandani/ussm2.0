@@ -7,11 +7,11 @@ This template is for a single page that does not have a date associated with it.
 {% endcomment %}
 
 
-<section class="usa-section about margin-bottom-3">
+<section class="usa-section about margin-bottom-3 padding-y-105">
   <div class="usa-grid">
     <div class="grid-container">
       {% include breadcrumbs.html %}
-      <div class="priority-tag-line"><h1 class="margin-0 font-ui-2xl">{{ page.title }}</h1></div>
+      <div class="priority-tag-line"><h1 class="margin-y-105 font-ui-xl">{{ page.title }}</h1></div>
       <div class="grid-row">
       {% include fibf-circle.html %}
       <div class="desktop:grid-col-7 mobile:grid-col-12">
@@ -20,12 +20,16 @@ This template is for a single page that does not have a date associated with it.
          <p><strong>{{ page.sec-title}}</strong></p>
           <p style="word-wrap: break-word;">
             {% if page.sec-name-href %}
-            <strong>Name:</strong> <a href="{{page.sec-name-href}}">{{ page.sec-name }}</a><br/>
+            <strong>Name:</strong>&nbsp;<a href="{{page.sec-name-href}}">{{ page.sec-name }}</a><br/>
             {% else %}
-            <strong>Name:</strong>{{ page.sec-name }}<br/>
+            <strong>Name:</strong>&nbsp;{{ page.sec-name }}<br/>
             {% endif %}
-
-            <strong>Website:</strong> <a href="{{page.sec-website-href}}">{{ page.sec-website }}</a>
+            {% if page.sec-website-href %}
+            <strong>Website:</strong>&nbsp;<a href="{{page.sec-website-href}}">{{ page.sec-website }}</a><br/>
+            {% endif %}
+            {% if page.sec-references %}
+            <strong>References:</strong>&nbsp;<a href="{{page.sec-references-href}}">{{ page.sec-references }}</a>
+            {% endif %}
           </p>
         </div>
       </div>

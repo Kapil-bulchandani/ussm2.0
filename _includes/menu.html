@@ -29,27 +29,37 @@ where we provide an easy way to manage your navigation system
       <div class="usa-nav__inner">
         <button class="usa-nav__close">{% asset close.svg alt="close" %}</button>
         <ul class="usa-nav__primary usa-accordion"  >
-          {% for nav_item in include.primary_navigation %}
-          {% unless nav_item.children %}
+          {% for nav in include.primary_navigation %}
+          {% unless nav.children %}
           {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
-          {% assign linkdir = nav_item.url |  replace: "/", ""  | lstrip %}
+          {% assign linkdir = nav.permalink | replace: "/", "" | lstrip %}
           <li class="usa-nav__primary-item">
-            <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
-               href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name }}</span></a>
+            <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}" href="{{ nav.permalink | prepend: site.baseurl}}"><span>{{ nav.text | escape }}</span></a>
           </li>
           {% else %}
           {% assign nav_id = 'primary-nav-' | append: forloop.index %}
           <li class="usa-nav__primary-item">
-            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="{{ nav_id }}"><span
-                    class="header-menu-text">{{ nav_item.name | escape }}</span></button>
-            <ul id="{{ nav_id }}" class="usa-nav__submenu" hidden="">
-              {% for subnav_item in nav_item.children %}
+            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="{{ nav_id }}"><span>{{ nav.text | escape }}</span></button>
+            <ul id="{{ nav_id }}" class="usa-nav__submenu">
+              {% for subnav_item in nav.children %}
               <li class="usa-nav__submenu-item">
-                <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>
+                {% if subnav_item.link == false %}
+                <span class="navheader text-accent-cool">{{ subnav_item.text | escape }}</span>
+                {% elsif subnav_item.tooltip %}
+                <a class="usa-tooltip" data-position="bottom" href="{% if subnav_item.external %}{{ subnav_item.permalink }}{% else %} {{ subnav_item.permalink | prepend: site.baseurl }} {% endif %}" title="{{ subnav_item.tooltip | escape }}">
+                  {{ subnav_item.text | escape }}
+                  {% if subnav_item.external %}
+                  {% asset external-link-alt.svg class="width-2 margin-left-05" alt="External Link" %}
+                  {% endif %}
+                </a>
+                {% else %}
+                <a href="{{ subnav_item.permalink | prepend: site.baseurl }}">
+                  {{ subnav_item.text | escape }}
+                </a>
+                {% endif %}
               </li>
               {% endfor %}
             </ul>
-
           </li>
           {% endunless %}
           {% endfor %}
