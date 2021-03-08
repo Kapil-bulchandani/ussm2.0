@@ -6,12 +6,12 @@ layout: base
 <section xmlns="http://www.w3.org/1999/html">
     <div class="usa-hero clearfix " style="background-image: url('{{ site.baseurl }}/assets/images/homepage-update-image-2.png');background-repeat:no-repeat">
         <div class="grid-container">
-            <div class="usa-width-whole hero-content">
-                <h1 style="color:#ffffff;">Quality Service Management Offices (QSMOs)</h1>
-                <center>
+            <div class="usa-width-whole hero-content text-center">
+
+                <h1 style="color:#ffffff;">{{ page.title }}</h1>
                     <h3 style="color:#ffffff;margin-bottom:12px;">The Office of Management and Budget has designated Quality Service Management Offices for Cybersecurity Services, Core Financial Management, Grants Management, Compensation Management, Work Schedule and Leave Management services.</h3>
                     <span><a style="color:white;font-size:18px; font-weight:300; font-family: sans-serif" href="#details">Designation details ❯</a></span>
-                </center>
+
             </div>
 
 <center>
@@ -37,30 +37,8 @@ layout: base
         </div>
 
     </div>
-
 </section>
-
-<section class="usa-section" style="background-color: #f1f1f1; padding-top:30px;padding-bottom:15px">
-    <a name="who"></a>
-<div class="grid-container">
-    <div class="grid-row">
-        <div class="tablet:grid-col ">
-           <center> <a class="hvr-sink" href="#who"style="text-decoration:none;"><h4 style="color:black; ">Who are the QSMOs?</h4>
-               <center><p><img src="../assets/images/project-icons/arrow-down.png" style="width:35px;"></p></center> </a></center>
-        </div>
-        <div class="tablet:grid-col border-x ">
-            <center><a class=" hvr-sink" href="#what" style="text-decoration:none;"><h4 style="color:black;">What are QSMOs?</h4>
-                <center><p><img  src="../assets/images/project-icons/arrow-down.png" style="width:35px;"></p></center></a></center>
-        </div>
-        <div class="tablet:grid-col  ">
-        <center><a class="hvr-sink" class="grow "href="#how" style="text-decoration:none;"><h4 style="color:black; ">How agencies get support from<br> the QSMO?</h4>
-            <center><p><img  src="../assets/images/project-icons/arrow-down.png" style="width:35px;"></p></center></a></center>
-        </div>
-    </div>
-</div>
-</section>
-
-
+{% include fibf-components.html %}
 <section>
     <div class="usa-graphic_list usa-section usa-prose clearfix" style="background-color: #205493;padding-bottom:60px;">
         <div class="grid-container">
@@ -72,7 +50,6 @@ layout: base
                 <p style="color:white"><i>1/11/2021</i> - <a style="color:white" href="https://www.hhs.gov/about/news/2021/01/11/hhs-lead-federal-grants-management-innovations-efficiencies.html">HHS to Lead Federal Grants Management Innovations and Efficiencies</a></p>
                 <p style="color:white"><i>6/30/2020</i> - <a href="https://fiscal.treasury.gov/news/omb-designates-treasury-as-fmqsmo.html"style="color:white"</a>OMB designates Treasury as Financial Management Quality Service Management Office</a></p>
                 <p style="color:white"><i>6/29/2020</i> - <a href="https://www.gsa.gov/about-us/newsroom/news-releases/administration-announces-two-new-qsmo-treasury-and-gsa"style="color:white"</a>Administration Announces Two New QSMO: Treasury and GSA</a></p>
-                <!--<p style="color:white"><i>5/XX/2020</i> - Press Release: Treasury QSMO Designated XXXXX</p> -->
 
             </div>
         </div>
@@ -80,44 +57,7 @@ layout: base
 </section>
 
 <a name="details">  </a>
-
-<section class="usa-graphic-list margin-bottom-4 margin-top-4">
-    <div class="grid-container">
-        <div class="usa-graphic-list__row grid-row grid-gap">
-            {% include qsmo-filter.html %}
-            <!--********Generates policy catalog items. Individual cards live in the in the _policies folder**************-->
-
-            <div class="tablet:grid-col-9">
-                <p class="filter-count qsmo-tag margin-top-0 text-gray-50 text-thin"></p>
-                <div class="qsmos">
-
-                    {% for qsmos in site.qsmos %}
-                    <div class="tablet:grid-col-4  grid-spacing qsmo {{ qsmos.filters }} " >
-                        <div class="container-GoG" tabindex="0" style="background-color:#f9f9f9;padding:0px;#{{qsmos.border}} solid 2px; cursor:default">
-                            <div style="background:#{{qsmos.border}};border-radius:10px 10px 0px 0px; padding:14px;">
-                                <span class="qsmo-tag" style="color:white">{{ qsmos.phase }}</span><br>
-                                <b style="color:white">{{ qsmos.name}}</b>
-                            </div>
-                            <div style="padding:14px;">
-                                <p style="font-size:12px;margin-top:5px;margin-bottom:2px"><b>QSMO Agency</b>: {{ qsmos.agency }}</p>
-                                <p style="font-size:12px;margin-top:5px;margin-bottom:2px;"><b>Services</b>: {{ qsmos.services }}</p>
-                                {% if qsmos.website %}
-                                <p style="font-size:12px;margin-top:5px;margin-bottom:2px;"><b>Website</b>: <a href="https://www.{{ qsmos.website }}">{{ qsmos.website }}</a></p>
-                                {% endif %}
-                                <p style="font-size:12px;margin-top:6px;"><b>Contact</b>: <a href="mailto:{{ qsmos.contact }}">{{ qsmos.contact }}</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-
-                </div>
-            </div>
-
-        </div>
-        </div>
-    </div>
-    </div>
-</section>
+{% include qsmo-data.html %}
 
 <section class="usa-section" style="background-color: #f1f1f1">
     <div class="grid-container">
@@ -149,55 +89,14 @@ layout: base
     <div class="usa-grid">
         <div class="usa-width-one-whole usa-media_block">
             <center><h2>How Will Agencies get Support from the QSMO?</h2></center>
-            <center><img src ="{{ site.baseurl }}/assets/images/project-images/support-qsmo.png" style="width:950px; padding:40px 20px 20px 20px;"></center>
+            <center><img src ="{{ page.img }}" style="width:950px; padding:40px 20px 20px 20px;"></center>
         </div>
     </div>
 </section>
 
 <section class="usa-section" style="background-color: #f1f1f1">
-    <div class="grid-container">
-        <div class="grid-row ">
-            <div class="grid-col-12">
-            <h2 style="color:black">Legacy Designated Providers</h2>
-            <p style="font-size: 12px">Memo 19-16 directs legacy designated providers to propose a <a href="{{ site.baseurl}}/assets/files/Investment-Action-Plan-SOP-April-2019.pdf">joint business case</a> with the QSMO to accept any new customers, expand services to existing customers, or make investments in technology or services for these functions.</p>
-            <table class="usa-table" style="font-size:15px;">
-                <tr>
-                    <th style="background-color: #205493;color:white;">Functional Area</th>
-                    <th style="background-color: #205493;color:white;">Legacy Designated Providers</th>
-                    <th style="background-color: #205493;color:white;">Pre/Designated QSMO</th>
-                </tr>
-                <tr>
-                    <td style="padding:12px;">Civilian HR Transaction Services</td>
-                    <ul>
-                        <td style="padding:12px;"><li>Defense Accounting and Financial Service (Department of Defense)</li><li>Interior Business Center (Department of Interior)</li> <li>Administrative Resource Center and Treasury Shared Service Center (Department of Treasury)</li><li> National Finance Center (Department of Agriculture)</li> </td>
-                        <td style="padding:12px;">General Services Administration</td>
-                </tr>
-                <tr>
-                    <td style="padding:12px;">Core Financial Management</td>
-                    <ul>
-                        <td style="padding:12px;"><li>Interior Business Center (Department of Interior)</li><li> Financial Management Services (Department of Agriculture)</li><li> Enterprise Services Center (Department of Transportation)</li><li> Administrative Resource Center (Department of Treasury)</li>  </td>
-                        <td style="padding:12px;">Department of Treasury</td>
-                </tr>
-                <tr>
-                    <td style="padding:12px;">Grants Management</td>
-                    <td style="padding:12px;">N/A</td>
-                    <td style="padding:12px;">Department of Health and Human Services</td>
-                </tr>
-                <tr>
-                    <td style="padding:12px;">Cybersecurity Services</td>
-                    <td style="padding:12px;">N/A</td>
-                    <td style="padding:12px;">Department of Homeland Security </td>
-                </tr>
-            </table>
-
-            <i>Agencies listed were previously designated by either OMB or an e-gov Managing Partner</i>
-        </div>
-    </div>
-    </div>
+    {% include legacy-designated.html %}
 </section>
 
 
-
-<!--<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>-->
-<!--<script src="{{ site.baseurl }}/js/isotope.settings.js"></script>-->
 
