@@ -74,50 +74,6 @@ where we provide an easy way to manage your navigation system
     </nav>
 
 
-<!--    <nav aria-label="Primary navigation" class="usa-nav">-->
-<!--      <div class="usa-nav__inner">-->
-<!--        <button class="usa-nav__close">{% asset close.svg alt="close" %}</button>-->
-<!--        <ul class="usa-nav__primary usa-accordion"  >-->
-<!--          {% for nav_item in include.primary_navigation %}-->
-<!--        {% if nav.show_in_menu %}-->
-<!--        {% unless nav.children %}-->
-<!--        {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}-->
-<!--        {% assign linkdir = nav.permalink | replace: "/", "" | lstrip %}-->
-<!--        <li class="usa-nav-primary-item">-->
-<!--          <a class="usa-nav-link{% if basedir == linkdir %} usa-current{% endif %}" href="{{ nav.permalink | prepend: site.baseurl}}"><span>{{ nav.text | escape }}</span></a>-->
-<!--        </li>-->
-<!--        {% else %}-->
-<!--        {% assign nav_id = 'primary-nav-' | append: forloop.index %}-->
-<!--        <li class="usa-nav-primary-item">-->
-<!--          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="{{ nav_id }}"><span>{{ nav.text | escape }}</span></button>-->
-<!--          <ul id="{{ nav_id }}" class="usa-nav-submenu">-->
-<!--            {% for subnav_item in nav.children %}-->
-<!--            <li class="usa-nav-submenu-item">-->
-<!--              {% if subnav_item.link == false %}-->
-<!--              <span class="navheader">{{ subnav_item.text | escape }}</span>-->
-<!--              {% elsif subnav_item.tooltip %}-->
-<!--              <a class="usa-tooltip" data-position="bottom" href="{% if subnav_item.external %}{{ subnav_item.permalink }}{% else %} {{ subnav_item.permalink | prepend: site.baseurl }} {% endif %}" title="{{ subnav_item.tooltip | escape }}">-->
-<!--                {{ subnav_item.text | escape }}-->
-<!--                {% if subnav_item.external %}-->
-<!--                <img src="{{site.baseurl}}/assets/img/external-link.png" style="width:12px; margin-left:10px;" alt="External Link"/>-->
-<!--                {% endif %}-->
-<!--              </a>-->
-<!--              {% else %}-->
-<!--              <a href="{{ subnav_item.permalink | prepend: site.baseurl }}">-->
-<!--                {{ subnav_item.text | escape }}-->
-<!--              </a>-->
-<!--              {% endif %}-->
-<!--            </li>-->
-<!--            {% endfor %}-->
-<!--          </ul>-->
-<!--        </li>-->
-<!--        {% endunless %}-->
-<!--        {% endif %}-->
-<!--        {% endfor %}-->
-<!--      </ul>-->
-
-<!--      </div>-->
-<!--    </nav>-->
 
 
   </div>
