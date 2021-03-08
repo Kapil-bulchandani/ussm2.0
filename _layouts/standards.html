@@ -7,25 +7,29 @@ This template is for a single page that does not have a date associated with it.
 {% endcomment %}
 
 
-<section class="usa-section about margin-bottom-3">
+<section class="usa-section about margin-bottom-3 padding-y-105">
   <div class="usa-grid">
     <div class="grid-container">
       {% include breadcrumbs.html %}
-      <div class="priority-tag-line"><h1 class="margin-0 font-ui-2xl">{{ page.title }}</h1></div>
+      <div class="priority-tag-line"><h1 class="margin-y-105 font-ui-xl">{{ page.title }}</h1></div>
       <div class="grid-row">
       {% include fibf-circle.html %}
       <div class="desktop:grid-col-7 mobile:grid-col-12">
         <p>The Federal Integrated Business Framework is a model that enables the Federal government to better coordinate and document common business needs across agencies and focus on outcomes, data, processes and performance. It is the essential first step towards standards that will drive economies of scale and leverage the government’s buying power.</p>
         <div id="rcorners2">
          <p><strong>{{ page.sec-title}}</strong></p>
-          <p>
+          <p style="word-wrap: break-word;">
             {% if page.sec-name-href %}
-            <strong>Name:</strong> <a href="{{page.sec-name-href}}">{{ page.sec-name }}</a><br/>
+            <strong>Name:</strong>&nbsp;<a href="{{page.sec-name-href}}">{{ page.sec-name }}</a><br/>
             {% else %}
-            <strong>Name:</strong>{{ page.sec-name }}<br/>
+            <strong>Name:</strong>&nbsp;{{ page.sec-name }}<br/>
             {% endif %}
-
-            <strong>Website:</strong> <a href="{{page.sec-website-href}}">{{ page.sec-website }}</a>
+            {% if page.sec-website-href %}
+            <strong>Website:</strong>&nbsp;<a href="{{page.sec-website-href}}">{{ page.sec-website }}</a><br/>
+            {% endif %}
+            {% if page.sec-references %}
+            <strong>References:</strong>&nbsp;<a href="{{page.sec-references-href}}">{{ page.sec-references }}</a>
+            {% endif %}
           </p>
         </div>
       </div>
@@ -37,7 +41,7 @@ This template is for a single page that does not have a date associated with it.
 <section  id="main-content" class="usa-section padding-top-2" >
   <div class="usa-grid">
     <div class="grid-container font-sans-sm">
-      <div class="lifecycle border-top-1px">
+      <div id="business_lifecycle" class="lifecycle border-top-1px">
       <h2>Federal Business Lifecycle - {{ page.sub-title }}</h2>
       <div class="grid-row">
         <div class="desktop:grid-col-3">
@@ -45,7 +49,7 @@ This template is for a single page that does not have a date associated with it.
         </div>
         <div class="desktop:grid-col-9">
           {% if page.lifecycle-source-document %}
-            <p><i>Source Document:</i> <img src="{{ site.baseurl }}/assets/images/icon.pdf.png" valign="middle">
+            <p style="word-wrap: break-word;"><i>Source Document:</i> <img src="{{ site.baseurl }}/assets/images/icon.pdf.png" valign="middle">
               <a href="{{page.lifecycle-source-document}}">{{ page.lifecycle-source-document }}</a>
             </p>
           {% endif %}
@@ -57,9 +61,11 @@ This template is for a single page that does not have a date associated with it.
       </div>
       {% if page.lifecycle-content %}
       {% include {{ page.lifecycle-content }} %}
-      {% endif %}
+        {% else %}
+        <p>To be developed.</p>
+        {% endif %}
       </div>
-      <div class ="capabilities border-top-1px">
+      <div id="business_capabilities" class ="capabilities border-top-1px">
         <h2>Business Capabilities - {{ page.sub-title }}</h2>
         <div class="grid-row">
           <div class="desktop:grid-col-3">
@@ -77,7 +83,63 @@ This template is for a single page that does not have a date associated with it.
         </div>
         {% if page.capabilities-content %}
         {% include {{ page.capabilities-content }} %}
+        {% else %}
+        <p>To be developed.</p>
         {% endif %}
+      </div>
+      <div id="business_use_cases" class ="use_cases border-top-1px">
+        <h2>Business Use Cases - {{ page.sub-title }}</h2>
+        <div class="grid-row">
+          <div class="desktop:grid-col-3">
+            <img src="{{ site.baseurl }}/assets/images/fibf/03.business.use.cases.sm.png" alt="Business Use Cases - {{ page.sub-title }}">
+          </div>
+          <div class="desktop:grid-col-9">
+            <p><i>A set of agency “stories” that document the key activities, inputs, outputs, and other LOB intersections to describe how the Federal government operates.</i>
+            </p>
+            {% if page.use-cases-content %}
+            {% include {{ page.use-cases-content }} %}
+            {% else %}
+            <p>To be developed.</p>
+            {% endif %}
+          </div>
+        </div>
+
+      </div>
+      <div id="standard_data_elements" class ="data_elements border-top-1px">
+        <h2>Standard Data Elements - {{ page.sub-title }}</h2>
+        <div class="grid-row">
+          <div class="desktop:grid-col-3">
+            <img src="{{ site.baseurl }}/assets/images/fibf/04.standard.data.elements.sm.png" alt="Standard Data Elements - {{ page.sub-title }}">
+          </div>
+          <div class="desktop:grid-col-9">
+            <p><i>Identify the minimum data fields required to support the inputs and outputs noted in the use cases and capabilities.</i>
+            </p>
+            {% if page.data-elements-content %}
+            {% include {{ page.data-elements-content }} %}
+            {% else %}
+            <p>To be developed.</p>
+            {% endif %}
+          </div>
+        </div>
+
+      </div>
+      <div id="performance_metrics" class ="metrics border-top-1px">
+        <h2>Performance Metrics - {{ page.sub-title }}</h2>
+        <div class="grid-row">
+          <div class="desktop:grid-col-3">
+            <img src="{{ site.baseurl }}/assets/images/fibf/05.performance.metrics.sm.png" alt="Performance Metrics - {{ page.sub-title }}">
+          </div>
+          <div class="desktop:grid-col-9">
+            <p><i>Define how the government measures successful delivery of outcomes based on timeliness, efficiency, and accuracy targets.</i>
+            </p>
+            {% if page.metrics-content %}
+            {% include {{ page.metrics-content }} %}
+            {% else %}
+            <p>To be developed.</p>
+            {% endif %}
+          </div>
+        </div>
+
       </div>
       {{ content }}
     </div>
