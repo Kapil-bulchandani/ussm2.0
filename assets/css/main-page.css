@@ -236,6 +236,12 @@ a {
   color: #ffffff;
   font-weight: strong; }
 
+.navheader {
+  text-decoration: none;
+  color: #02bfe7;
+  font-weight: bold;
+  margin-left: 0.75em; }
+
 @media screen and (min-width: 600px) {
   .usa-grid {
     padding-right: 3rem;
