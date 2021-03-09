@@ -11,7 +11,7 @@ This template is for a single page that does not have a date associated with it.
   <div class="usa-grid">
     <div class="grid-container">
       {% include breadcrumbs.html %}
-      <div class="priority-tag-line"><h1 class="margin-y-105 font-ui-xl">{{ page.title }}</h1></div>
+      <div class="priority-tag-line"><h1 class="margin-y-105 font-ui-l">{{ page.title }}</h1></div>
       <div class="grid-row">
       {% include fibf-circle.html %}
       <div class="desktop:grid-col-7 mobile:grid-col-12">
@@ -49,7 +49,7 @@ This template is for a single page that does not have a date associated with it.
         </div>
         <div class="desktop:grid-col-9">
           {% if page.lifecycle-source-document %}
-            <p style="word-wrap: break-word;"><i>Source Document:</i> <img src="{{ site.baseurl }}/assets/images/icon.pdf.png" valign="middle">
+            <p style="word-wrap: break-word;"><i>Source Document:</i> <img src="{{ site.baseurl }}/assets/images/icon.pdf.png" valign="middle" alt="lifecycle source document">
               <a href="{{page.lifecycle-source-document}}">{{ page.lifecycle-source-document }}</a>
             </p>
           {% endif %}
@@ -71,8 +71,8 @@ This template is for a single page that does not have a date associated with it.
             <img src="{{ site.baseurl }}/assets/images/fibf/02.business.capabilities.sm.png" alt="Business Capabilities - {{ page.sub-title }}">
           </div>
           <div class="desktop:grid-col-9">
-            {% if page.lifecycle-source-document %}
-            <p><i>Source Document:</i> <img src="{{ site.baseurl }}/assets/images/icon.pdf.png" valign="middle">
+            {% if page.capabilities-source-document %}
+            <p><i>Source Document:</i> <img src="{{ site.baseurl }}/assets/images/icon.pdf.png" valign="middle" alt="capabilities source document">
               <a href="{{page.capabilities-source-document}}">{{ page.capabilities-source-document }}</a>
             </p>
             {% endif %}
@@ -81,7 +81,9 @@ This template is for a single page that does not have a date associated with it.
           </div>
         </div>
         {% if page.capabilities-content %}
+        <div class="margin-y-105">
         {% include {{ page.capabilities-content }} %}
+        </div>
         {% else %}
         <p>To be developed.</p>
         {% endif %}
