@@ -3,7 +3,7 @@ console.log("Hi from Federalist");
 jQuery(document).ready(function() {
    jQuery('#table_id').DataTable( {
        responsive: true,
-       dom: 'Bfrtip',
+       dom: 'pfrtiB',
        buttons: [
            'copyHtml5',
            'excelHtml5',
@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
            'pdfHtml5',
            'pageLength'
        ]
-    } );
+   } );
 } );
 
 
