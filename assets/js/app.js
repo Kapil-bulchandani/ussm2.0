@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
            'pdfHtml5',
            'pageLength'
        ]
-    } );
+   } );
 } );
 
 
