@@ -16,26 +16,22 @@ where we provide an easy way to manage your navigation system
 <!--                </div>-->
 <!--            </div>-->
 
-            <!-- sidebar-header  -->
-
-            <!-- sidebar-search  -->
             <div class="sidebar-menu">
                 <ul >
-                    <li style="background-color:#0f274a; margin-bottom: 5px;">
-
+                    <li style="background-color:#0f274a; margin-bottom: 5px;" >
                         <a href="{{site.baseurl}}/fibf/">
                             <div class="image-txt-container">
-                            <img src="../assets/images/icon.fm2.png" style="width:45px;margin-right:15px;" alt="Financial Management">
-                            <span>FIBF Home
+                                <img src="../assets/images/icon.fm2.png" style="width:35px;margin-right:12px;" alt="Financial Management">
+                                <span>FIBF Home
                             </span>
                             </div>
-                        </a>
 
+                        </a>
                     </li>
                     <li style="background-color:#0f274a; margin-bottom: 5px;" >
                         <a href="{{site.baseurl}}/fibf-fm/">
                             <div class="image-txt-container">
-                            <img src="../assets/images/icon.fm2.png" style="width:45px;margin-right:15px;" alt="Financial Management">
+                            <img src="../assets/images/icon.fm2.png" style="width:35px;margin-right:12px;" alt="Financial Management">
                             <span>Financial Management
                             </span>
                             </div>
@@ -46,25 +42,57 @@ where we provide an easy way to manage your navigation system
                     <li class="sidebar-dropdown" style="background-color:#0f274a; margin-bottom: 5px;">
                         <a href="#">
                             <div class="image-txt-container">
-                            <img src="../assets/images/icon.hr.png" style="width:40px;margin-right:15px;" alt="HR Management Services">
+                            <img src="../assets/images/icon.hr.png" style="width:35px;margin-right:12px;" alt="HR Management Services">
                             <span>HR Management Services
                             </span>
                             </div>
 
                         </a>
                         <div class="sidebar-submenu">
-                            <ul>
+                            <ul style="list-style-type: none;">
                                 <li>
-                                    <a href="#">Talent Acquisition</a>
+                                    <a href="{{site.baseurl}}/fibf-hr/">
+                                        <div class="image-txt-container">
+                                            <img src="../assets/images/fibf/hr.talent.png" style="width:30px;" alt="Financial Management">
+                                            <span>Talent Acquisition
+                            </span>
+                                        </div>
+
+                                    </a>
+
                                 </li>
                                 <li>
-                                    <a href="#">Talent Development</a>
+                                    <a href="{{site.baseurl}}/fibf-hr-td/">
+                                        <div class="image-txt-container">
+                                            <img src="../assets/images/fibf/hr.talent.png" style="width:30px;" alt="Financial Management">
+                                            <span>Talent Development
+                            </span>
+                                        </div>
+
+                                    </a>
+
                                 </li>
                                 <li>
-                                    <a href="#">Employee Performance Management</a>
+                                    <a href="{{site.baseurl}}/fibf-hr-epm/">
+                                        <div class="image-txt-container">
+                                            <img src="../assets/images/fibf/hr.talent.png" style="width:30px;" alt="Financial Management">
+                                            <span>Employee Performance Management
+                            </span>
+                                        </div>
+
+                                    </a>
+
                                 </li>
                                 <li>
-                                    <a href="#">Compensation and Benefits</a>
+                                    <a href="{{site.baseurl}}/fibf-hr-cb/">
+                                        <div class="image-txt-container">
+                                            <img src="../assets/images/fibf/hr.talent.png" style="width:30px;" alt="Financial Management">
+                                            <span>Compensation and Benefits
+                            </span>
+                                        </div>
+
+                                    </a>
+
                                 </li>
                             </ul>
                         </div>
@@ -72,7 +100,7 @@ where we provide an easy way to manage your navigation system
                     <li style="background-color:#0f274a; margin-bottom: 5px;">
                         <a href="{{site.baseurl}}/fibf-procurement/">
                             <div class="image-txt-container">
-                            <img src="../assets/images/icon.procurement.png" style="width:40px;margin-right:15px;" alt="Procurement">
+                            <img src="../assets/images/icon.procurement.png" style="width:35px;margin-right:12px;" alt="Procurement">
                             <span>Procurement
                             </span>
                             </div>
@@ -81,7 +109,7 @@ where we provide an easy way to manage your navigation system
                     <li style="background-color:#0f274a; margin-bottom: 5px;">
                         <a href="{{site.baseurl}}/fibf-gm/">
                             <div class="image-txt-container">
-                            <img src="../assets/images/icon.grants2.png" style="width:48px;margin-right:15px;" alt="Grants Management">
+                            <img src="../assets/images/icon.grants2.png" style="width:35px;margin-right:12px;" alt="Grants Management">
                             <span>Grants Management
                             </span>
                             </div>
@@ -90,7 +118,7 @@ where we provide an easy way to manage your navigation system
                     <li style="background-color:#0f274a; margin-bottom: 5px;">
                         <a href="{{site.baseurl}}/fibf-travel/">
                             <div class="image-txt-container">
-                            <img src="../assets/images/icon.travel2.png" style="width:40px;margin-right:15px;" alt="Travel and Expense Management">
+                            <img src="../assets/images/icon.travel2.png" style="width:35px;margin-right:12px;" alt="Travel and Expense Management">
                             <span>Travel</span>
                             </div>
                         </a>
@@ -224,11 +252,12 @@ body {
   z-index: 999;
 }
 
-.sidebar-wrapper ul {
+.sidebar-wrapper ul  {
   list-style-type: none;
   padding: 0;
 
 }
+
 
 .sidebar-wrapper a {
   text-decoration: none;
@@ -265,14 +294,13 @@ body {
   cursor: pointer;
   font-size: 20px;
 }
-/*--------------------sidebar-header----------------------*/
 
-.sidebar-wrapper .sidebar-header {
-  padding: 20px;
+
+.sidebar-wrapper  {
   overflow: hidden;
 }
 
-.sidebar-wrapper .sidebar-header .user-pic {
+.sidebar-wrapper  .user-pic {
   float: left;
   width: 60px;
   padding: 2px;
@@ -281,30 +309,30 @@ body {
   overflow: hidden;
 }
 
-.sidebar-wrapper .sidebar-header .user-pic img {
+.sidebar-wrapper  .user-pic img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-.sidebar-wrapper .sidebar-header .user-info {
+.sidebar-wrapper  .user-info {
   float: left;
 }
 
-.sidebar-wrapper .sidebar-header .user-info > span {
+.sidebar-wrapper  .user-info > span {
   display: block;
 }
 
-.sidebar-wrapper .sidebar-header .user-info .user-role {
+.sidebar-wrapper  .user-info .user-role {
   font-size: 12px;
 }
 
-.sidebar-wrapper .sidebar-header .user-info .user-status {
+.sidebar-wrapper  .user-info .user-status {
   font-size: 11px;
   margin-top: 4px;
 }
 
-.sidebar-wrapper .sidebar-header .user-info .user-status i {
+.sidebar-wrapper  .user-info .user-status i {
   font-size: 8px;
   margin-right: 4px;
   color: #5cb85c;
@@ -374,19 +402,6 @@ body {
   font-size: 13px;
 }
 
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
-  content: "\f111";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  font-style: normal;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin-right: 10px;
-  font-size: 8px;
-}
 
 .sidebar-wrapper .sidebar-menu ul li a span.label,
 .sidebar-wrapper .sidebar-menu ul li a span.badge {
@@ -455,22 +470,6 @@ body {
   animation: sonar 1.5s infinite;
 }
 
-/*--------------------------page-content-----------------------------*/
-
-.page-wrapper .page-content {
-  display: inline-block;
-  width: 100%;
-  padding-left: 0px;
-  padding-top: 20px;
-}
-
-.page-wrapper .page-content > div {
-  padding: 20px 40px;
-}
-
-.page-wrapper .page-content {
-  overflow-x: hidden;
-}
 
 /*------scroll bar---------------------*/
 
@@ -515,22 +514,22 @@ body {
     background: #162e51;
 }
 
-.chiller-theme .sidebar-wrapper .sidebar-header,
-.chiller-theme .sidebar-wrapper .sidebar-search,
+.chiller-theme .sidebar-wrapper ,
+.chiller-theme .sidebar-wrapper ,
 .chiller-theme .sidebar-wrapper .sidebar-menu {
     border-top: 1px solid #3a3f48;
 }
 
-.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
-.chiller-theme .sidebar-wrapper .sidebar-search .input-group-text {
+.chiller-theme .sidebar-wrapper  input.search-menu,
+.chiller-theme .sidebar-wrapper  .input-group-text {
     border-color: transparent;
     box-shadow: none;
 }
 
-.chiller-theme .sidebar-wrapper .sidebar-header .user-info .user-role,
-.chiller-theme .sidebar-wrapper .sidebar-header .user-info .user-status,
-.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
-.chiller-theme .sidebar-wrapper .sidebar-search .input-group-text,
+.chiller-theme .sidebar-wrapper  .user-info .user-role,
+.chiller-theme .sidebar-wrapper  .user-info .user-status,
+.chiller-theme .sidebar-wrapper  input.search-menu,
+.chiller-theme .sidebar-wrapper  .input-group-text,
 .chiller-theme .sidebar-wrapper .sidebar-brand>a,
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a,
 .chiller-theme .sidebar-footer>a {
@@ -539,7 +538,7 @@ body {
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover>a,
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active>a,
-.chiller-theme .sidebar-wrapper .sidebar-header .user-info,
+.chiller-theme .sidebar-wrapper  .user-info,
 .chiller-theme .sidebar-wrapper .sidebar-brand>a:hover,
 .chiller-theme .sidebar-footer>a:hover i {
     color: #b8bfce;
@@ -555,7 +554,7 @@ body {
 
 .chiller-theme .sidebar-wrapper ul li:hover a i,
 .chiller-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
-.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focus+span,
+.chiller-theme .sidebar-wrapper  input.search-menu:focus+span,
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
     color: #16c7ff;
     text-shadow:0px 0px 10px rgba(22, 199, 255, 0.5);
@@ -563,8 +562,8 @@ body {
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a i,
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown div,
-.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
-.chiller-theme .sidebar-wrapper .sidebar-search .input-group-text {
+.chiller-theme .sidebar-wrapper  input.search-menu,
+.chiller-theme .sidebar-wrapper  .input-group-text {
     background: #162e51;
 }
 
@@ -572,19 +571,6 @@ body {
     color: #6c7b88;
 }
 
-.chiller-theme .sidebar-footer {
-    background: #162e51;
-    box-shadow: 0px -1px 5px #282c33;
-    border-top: 1px solid #464a52;
-}
-
-.chiller-theme .sidebar-footer>a:first-child {
-    border-left: none;
-}
-
-.chiller-theme .sidebar-footer>a:last-child {
-    border-right: none;
-}
 
 </style>
 
