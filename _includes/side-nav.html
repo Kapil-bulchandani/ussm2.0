@@ -3,18 +3,18 @@ To modify the menu system, you are welcome to edit this HTML directly or you can
 where we provide an easy way to manage your navigation system
 {% endcomment %}
 
-<div class="page-wrapper chiller-theme toggled">
+<div class="usa-overlay"></div>
+<div class="side-nav chiller-theme toggled">
     <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
-        <i class="fas fa-bars"></i>
+        <i class="fa fa-bars"></i>
     </a>
     <nav id="sidebar" class="sidebar-wrapper">
         <div class="sidebar-content">
-<!--            <div class="sidebar-brand">-->
-<!--                <a href="#">pro sidebar</a>-->
-<!--                <div id="close-sidebar">-->
-<!--                    <i class="fa fa-times"></i>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="sidebar-brand">
+                <div id="close-sidebar">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
 
             <div class="sidebar-menu">
                 <ul class="usa-sidenav-li">
@@ -125,13 +125,14 @@ where we provide an easy way to manage your navigation system
                     </li>
                 </ul>
             </div>
-            <!-- sidebar-menu  -->
+          
         </div>
-        <!-- sidebar-content  -->
+      
     </nav>
 
-    <!-- page-content" -->
+   
 </div>
+
 
 
 
@@ -159,12 +160,16 @@ where we provide an easy way to manage your navigation system
   }
 });
 
+
+
+
 $("#close-sidebar").click(function() {
-  $(".page-wrapper").removeClass("toggled");
+  $(".side-nav").removeClass("toggled");
 });
 $("#show-sidebar").click(function() {
-  $(".page-wrapper").addClass("toggled");
+  $(".side-nav").addClass("toggled");
 });
+
 
 
 
