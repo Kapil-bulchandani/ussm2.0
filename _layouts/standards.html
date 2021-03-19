@@ -6,7 +6,10 @@ layout: base
 This template is for a single page that does not have a date associated with it. For example, an about page.
 {% endcomment %}
 
-
+<div class="usa-overlay"></div>
+<div class="page-wrapper chiller-theme toggled">
+  {% include side-nav.html %}
+  <main class="page-content pt-2">
 <section class="usa-section about margin-bottom-3 padding-y-105">
   <div class="usa-grid">
     <div class="grid-container">
@@ -143,10 +146,11 @@ This template is for a single page that does not have a date associated with it.
 
       </div>
       {{ content }}
-      {% include scripts.html %}
-      {% include side-nav.html %}
+
 
     </div>
   </div>
 </section>
 
+  </main>
+</div>

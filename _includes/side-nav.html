@@ -3,8 +3,7 @@ To modify the menu system, you are welcome to edit this HTML directly or you can
 where we provide an easy way to manage your navigation system
 {% endcomment %}
 
-<div class="usa-overlay"></div>
-<div class="side-nav chiller-theme toggled">
+
     <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
         <i class="fa fa-bars"></i>
     </a>
@@ -131,46 +130,8 @@ where we provide an easy way to manage your navigation system
     </nav>
 
    
-</div>
 
 
 
 
 
-<script>
-    $(".sidebar-dropdown > a").click(function() {
-  $(".sidebar-submenu").slideUp(200);
-  if (
-    $(this)
-      .parent()
-      .hasClass("active")
-  ) {
-    $(".sidebar-dropdown").removeClass("active");
-    $(this)
-      .parent()
-      .removeClass("active");
-  } else {
-    $(".sidebar-dropdown").removeClass("active");
-    $(this)
-      .next(".sidebar-submenu")
-      .slideDown(200);
-    $(this)
-      .parent()
-      .addClass("active");
-  }
-});
-
-
-
-
-$("#close-sidebar").click(function() {
-  $(".side-nav").removeClass("toggled");
-});
-$("#show-sidebar").click(function() {
-  $(".side-nav").addClass("toggled");
-});
-
-
-
-
-</script>

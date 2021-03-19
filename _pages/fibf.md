@@ -4,8 +4,10 @@ permalink: /fibf/
 
 ---
 
-
-
+<div class="usa-overlay"></div>
+<div class="page-wrapper chiller-theme toggled">
+  {% include side-nav.html %}
+  <main class="page-content pt-2">
 <section>
     <div class="usa-hero clearfix " style="background-image: url('{{ site.baseurl }}/assets/images/homepage-update-image-2.png');background-repeat:no-repeat">
         <div class="grid-container">
@@ -224,9 +226,7 @@ permalink: /fibf/
         <p ><a class="text-primary" style="float: right; "  href="#top">Back to top</a></p>
     </div>
 </section>
-<div class="grid-container font-sans-sm">
-{% include scripts.html %}
-{% include side-nav.html %}
+</main>
 </div>
 
 
