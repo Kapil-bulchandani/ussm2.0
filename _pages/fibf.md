@@ -7,7 +7,7 @@ permalink: /fibf/
 <div class="usa-overlay"></div>
 <div class="page-wrapper chiller-theme toggled">
   {% include side-nav.html %}
-  <main class="page-content pt-2">
+  <main class="page-content">
 <section>
     <div class="usa-hero clearfix " style="background-image: url('{{ site.baseurl }}/assets/images/homepage-update-image-2.png');background-repeat:no-repeat">
         <div class="grid-container">
