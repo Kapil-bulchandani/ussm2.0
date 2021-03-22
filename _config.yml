@@ -18,8 +18,8 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: Federal Shared Services
-email: privacy.council@gsa.gov
+title: USSM
+email:
 description: >- # this means to ignore newlines until "baseurl:"
   Official Website of the US Federal Privacy Council.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -222,19 +222,6 @@ primary_navigation:
 # 1. Create an account with Search.gov https://search.usa.gov/signup
 # 2. Add a new site.
 # 3. Add your site/affiliate name here.
-searchgov:
-
-  # You should not change this.
-  endpoint: https://search.usa.gov
-
-  # replace this with your search.gov account
-  affiliate: fpc_gov
-
-  # replace with your access key
-  access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
-
-  # this renders the results within the page instead of sending to user to search.gov
-  inline: false
 
 ##########################################################################################
 # The values below here are more advanced and should only be
