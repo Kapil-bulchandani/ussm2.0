@@ -5,7 +5,7 @@ node_modules
 .bundle
 .jekyll-cache/
 .idea/
-.DS_Store
+*.DS_Store
 .idea/workspace.xml
 /assets/css/main-page.css
 /assets/css/main-page.css.map
