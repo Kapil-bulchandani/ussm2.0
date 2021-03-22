@@ -95,6 +95,13 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 1314px) {
+  .fibf-wheel {
+    margin-left: -2rem;
+    margin-right: -2rem
+  }
+}
 /*----------------show sidebar button----------------*/
 #show-sidebar {
   position: fixed;
