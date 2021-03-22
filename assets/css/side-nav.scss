@@ -147,7 +147,7 @@
 
 .sidebar-wrapper .sidebar-brand {
   padding: 10px 20px;
-  align-items: center;
+  text-align: right;
 }
 
 .sidebar-wrapper .sidebar-brand > a {
@@ -166,8 +166,9 @@
   overflow: hidden;
 }
 
-
-
+.fa {
+    color: white;
+}
 /*----------------------sidebar-menu-------------------------*/
 
 .sidebar-wrapper .sidebar-menu {
