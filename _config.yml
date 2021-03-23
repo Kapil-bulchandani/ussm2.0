@@ -251,6 +251,10 @@ collections:
     output: true
   qsmos:
     output: true
+  hr:
+    output: true
+  fm:
+    output: true
 
 
 markdown: kramdown
