@@ -46,62 +46,6 @@ permalink: /fibf/
 </section>
 
 
-<section  id="main-content" class="usa-section padding-top-2" style="margin-bottom: -47px;" >
-    <div class="usa-grid">
-        <div class="grid-container font-sans-sm">
-            <h2 class="text-primary" style="font-size:30px">Business Standards</h2>
-        </div>
-    </div>
-</section>
-
-<section class="usa-section usa-graphic_list" style="padding-top:0;padding-bottom:0;margin-bottom:0;">
-    <div class="grid-container">
-        <div class="grid-row">
-
-   <div class="tablet:grid-col text-center margin-y-2 ">
-                <A class=" hvr-sink" HREF="../fibf-fm">
-                    <img src="../assets/images/icon.fm.png" style="width:60px;" alt="Financial Management">
-                    <p style="margin-top:0px; font-size: 12px; color: #212121;">Financial Management</p> </a>
-
-   </div>
-            <div class="tablet:grid-col text-center margin-y-2">
-                <A class=" hvr-sink" HREF="../fibf-hr">
-                    <img src="../assets/images/icon.hr.png" style="width:60px;" alt="HR Management Services">
-                    <p style="margin-top:0px; font-size: 12px; color: #212121;">HR Management<BR>Services</p>
-                </a>
-                </div>
-            <div class="tablet:grid-col text-center margin-y-2">
-
-   <A class=" hvr-sink" HREF="../fibf-procurement">
-                    <img src="../assets/images/icon.procurement.png" style="width:58px;" alt="Procurement">
-                    <p style="margin-top:0px; font-size: 12px; color: #212121;">Procurement</p>
-                </a>
-
-</div>
-
-<div class="tablet:grid-col text-center margin-y-2">
-                <A class=" hvr-sink" HREF="../fibf-gm">
-                    <img src="../assets/images/icon.grants.png" style="width:68px;" alt="Grants Management">
-                    <p style="margin-top:0px; font-size: 12px; color: #212121;">Grants Management</p>
-                </a>
-            </div>
-            <div class="tablet:grid-col text-center margin-y-2">
-                <A class=" hvr-sink" HREF="../fibf-travel">
-                    <img src="../assets/images/icon.travel.png" style="width:60px;" alt="Travel and Expense Management">
-                    <p style="margin-top:0px; font-size: 12px; color: #212121;">Travel and Expense Management</p>
-                </a>
-            </div>
-            <div class="tablet:grid-col text-center margin-y-2">
-                <A class=" hvr-sink" HREF="../fibf-ERM">
-                    <img src="../assets/images/icon.ERM.png" style="width:60px;" alt="Electronic Records Management">
-                    <p style="margin-top:0px; font-size: 12px; color: #212121;">Electronic Records Management</p>
-                </a>
-            </div>
-
- </div>
- </div>
-
-</section>
 
 <section class="usa-section usa-graphic_list " style="background-color: #205493;" id="fibf-components">
     <div class="grid-container">
