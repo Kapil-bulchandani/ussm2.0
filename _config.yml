@@ -255,6 +255,14 @@ collections:
     output: true
   fm:
     output: true
+  procurement:
+    output: true
+  erm:
+    output: true
+  grants:
+    output: true
+  travel:
+    output: true
 
 
 markdown: kramdown
