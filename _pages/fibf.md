@@ -1,7 +1,7 @@
 ---
 layout: base
 permalink: /fibf/
-
+title: Federal Integrated Business Framework
 ---
 
 <div class="usa-overlay"></div>
