@@ -250,7 +250,7 @@ a {
   padding: 0; }
 
 .usa-accordion div {
-  margin-bottom: 0.5em; }
+  /*margin-bottom: 0.5em;*/ }
 
 @media screen and (min-width: 600px) {
   .usa-width-one-whole {

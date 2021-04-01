@@ -6,13 +6,16 @@ layout: base
 This template is for a single page that does not have a date associated with it. For example, an about page.
 {% endcomment %}
 
-
+<div class="usa-overlay"></div>
+<div class="page-wrapper chiller-theme toggled">
+  {% include side-nav.html %}
+  <main class="page-content ">
 <section class="usa-section about margin-bottom-3 padding-y-105">
   <div class="usa-grid">
     <div class="grid-container">
       {% include breadcrumbs.html %}
       <div class="priority-tag-line"><h1 class="margin-y-105 font-ui-l">{{ page.title }}</h1></div>
-      <div class="grid-row">
+      <div class="grid-row fibf-wheel" >
       {% include fibf-circle.html %}
       <div class="desktop:grid-col-7 mobile:grid-col-12">
         <p>The Federal Integrated Business Framework is a model that enables the Federal government to better coordinate and document common business needs across agencies and focus on outcomes, data, processes and performance. It is the essential first step towards standards that will drive economies of scale and leverage the government’s buying power.</p>
@@ -45,7 +48,7 @@ This template is for a single page that does not have a date associated with it.
       <h2>Federal Business Lifecycle - {{ page.sub-title }}</h2>
       <div class="grid-row">
         <div class="desktop:grid-col-3">
-          <img src="{{ site.baseurl }}/assets/images/fibf/01.federal.business.lifecycle.sm.png" alt="">
+          <img src="{{ site.baseurl }}/assets/images/fibf/01.federal.business.lifecycle.sm.png" alt="" style="width:230px;">
         </div>
         <div class="desktop:grid-col-9">
           {% if page.lifecycle-source-document %}
@@ -61,14 +64,16 @@ This template is for a single page that does not have a date associated with it.
       {% if page.lifecycle-content %}
       {% include {{ page.lifecycle-content }} %}
         {% else %}
-        <p>To be developed.</p>
+        <p>Business Standards Under Development.</p>
         {% endif %}
       </div>
+      <p><a class="text-primary" style="display:flex; justify-content:flex-end;"  href="#top">Back to top</a></p>
+
       <div id="business_capabilities" class ="capabilities border-top-1px">
         <h2>Business Capabilities - {{ page.sub-title }}</h2>
         <div class="grid-row">
           <div class="desktop:grid-col-3">
-            <img src="{{ site.baseurl }}/assets/images/fibf/02.business.capabilities.sm.png" alt="">
+            <img src="{{ site.baseurl }}/assets/images/fibf/02.business.capabilities.sm.png" alt="" style="width:230px;">
           </div>
           <div class="desktop:grid-col-9">
             {% if page.capabilities-source-document %}
@@ -85,14 +90,16 @@ This template is for a single page that does not have a date associated with it.
         {% include {{ page.capabilities-content }} %}
         </div>
         {% else %}
-        <p>To be developed.</p>
+        <p>Business Standards Under Development.</p>
         {% endif %}
-      </div>
+        </div>
+      <p><a class="text-primary" style="display:flex; justify-content:flex-end;"  href="#top">Back to top</a></p>
+
       <div id="business_use_cases" class ="use_cases border-top-1px">
         <h2>Business Use Cases - {{ page.sub-title }}</h2>
         <div class="grid-row">
           <div class="desktop:grid-col-3">
-            <img src="{{ site.baseurl }}/assets/images/fibf/03.business.use.cases.sm.png" alt="">
+            <img src="{{ site.baseurl }}/assets/images/fibf/03.business.use.cases.sm.png" alt="" style="width:230px;">
           </div>
           <div class="desktop:grid-col-9">
             <p><i>A set of agency “stories” that document the key activities, inputs, outputs, and other LOB intersections to describe how the Federal government operates.</i>
@@ -100,17 +107,18 @@ This template is for a single page that does not have a date associated with it.
             {% if page.use-cases-content %}
             {% include {{ page.use-cases-content }} %}
             {% else %}
-            <p>To be developed.</p>
+            <p>Business Standards Under Development.</p>
             {% endif %}
           </div>
         </div>
+        <p><a class="text-primary" style="display:flex; justify-content:flex-end; margin-top: 55px;"  href="#top">Back to top</a></p>
 
       </div>
       <div id="standard_data_elements" class ="data_elements border-top-1px">
         <h2>Standard Data Elements - {{ page.sub-title }}</h2>
         <div class="grid-row">
           <div class="desktop:grid-col-3">
-            <img src="{{ site.baseurl }}/assets/images/fibf/04.standard.data.elements.sm.png" alt="">
+            <img src="{{ site.baseurl }}/assets/images/fibf/04.standard.data.elements.sm.png" alt="" style="width:230px;">
           </div>
           <div class="desktop:grid-col-9">
             <p><i>Identify the minimum data fields required to support the inputs and outputs noted in the use cases and capabilities.</i>
@@ -118,8 +126,9 @@ This template is for a single page that does not have a date associated with it.
             {% if page.data-elements-content %}
             {% include {{ page.data-elements-content }} %}
             {% else %}
-            <p>To be developed.</p>
+            <p>Business Standards Under Development.</p>
             {% endif %}
+            <p><a class="text-primary" style="display:flex; justify-content:flex-end; margin-top: 45px;"  href="#top">Back to top</a></p>
           </div>
         </div>
 
@@ -128,7 +137,7 @@ This template is for a single page that does not have a date associated with it.
         <h2>Performance Metrics - {{ page.sub-title }}</h2>
         <div class="grid-row">
           <div class="desktop:grid-col-3">
-            <img src="{{ site.baseurl }}/assets/images/fibf/05.performance.metrics.sm.png" alt="">
+            <img src="{{ site.baseurl }}/assets/images/fibf/05.performance.metrics.sm.png" alt="" style="width:230px;">
           </div>
           <div class="desktop:grid-col-9">
             <p><i>Define how the government measures successful delivery of outcomes based on timeliness, efficiency, and accuracy targets.</i>
@@ -136,14 +145,19 @@ This template is for a single page that does not have a date associated with it.
             {% if page.metrics-content %}
             {% include {{ page.metrics-content }} %}
             {% else %}
-            <p>To be developed.</p>
+            <p>Business Standards Under Development.</p>
             {% endif %}
+            <p><a class="text-primary" style="display:flex; justify-content:flex-end; margin-top: 45px;"  href="#top">Back to top</a></p>
           </div>
         </div>
 
       </div>
       {{ content }}
+
+
     </div>
   </div>
 </section>
 
+  </main>
+</div>
