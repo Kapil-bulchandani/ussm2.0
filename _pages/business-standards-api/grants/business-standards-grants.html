@@ -9,5 +9,8 @@ permalink: /business-standards-api/grants/
 "{{post.type |strip_newlines}}": {{ post.content | strip_html | strip_newlines }}{% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% raw %}}],{% endraw %}
-"Business Capabilities": [{% include business-standards-api/grants/grants-capabilities.html %}]
+"Business Capabilities": [{% include business-standards-api/grants/grants-capabilities.html %}],
+"Business Use Cases": [{% include business-standards-api/grants/grants-use-cases.html %}],
+"Standard Data Elements": [{% include business-standards-api/grants/grants-data-elements.html %}],
+"Performance Metrics": {% include business-standards-api/grants/grants-performance-metrics.html %}
 }
