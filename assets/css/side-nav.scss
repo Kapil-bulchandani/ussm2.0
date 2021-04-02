@@ -94,6 +94,12 @@
   .page-wrapper.toggled .page-content .overlay {
     display: block;
   }
+
+}
+@media screen and (max-width: 1531px) {
+  .sidenav-main {
+    displayt: none;
+  }
 }
 
 @media screen and (max-width: 1314px) {
@@ -101,6 +107,7 @@
     margin-left: -2rem;
     margin-right: -2rem
   }
+
 }
 /*----------------show sidebar button----------------*/
 #show-sidebar {
@@ -215,6 +222,19 @@
     color: #07101c;
     text-decoration: none;
 }
+
+
+
+    .bs .img-top {
+        display: none;
+        position: absolute;
+        top: 9px;
+        left: 21px;
+        z-index: 99;
+    }
+    .bs:hover .img-top {
+        display: inline;
+    }
 
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
