@@ -9,7 +9,7 @@ permalink: /business-standards-api/
 "{{post.type |strip_newlines}}": {{ post.content | strip_html | strip_newlines }}{% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% raw %}}{% endraw %}],
-"Business Capabilities": [{% include business-standards-api/fm-capabilities.html %}]
+"Business Capabilities": [{% include business-standards-api/fm/fm-capabilities.html %}]
 },
 {
 "Business-Standards": "HR",
@@ -19,7 +19,7 @@ permalink: /business-standards-api/
 "{{post.type |strip_newlines}}": {{ post.content | strip_html | strip_newlines }}{% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% raw %}}{% endraw %}],
-"Business Capabilities": [{% include business-standards-api/hr-capabilities.html %}]
+"Business Capabilities": [{% include business-standards-api/hr/benefits/hr-capabilities.html %}]
 },
 {
 "Business-Standards": "Procurement Standards",
@@ -28,7 +28,7 @@ permalink: /business-standards-api/
 "{{post.type |strip_newlines}}": {{ post.content | strip_html | strip_newlines }}{% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% raw %}}],{% endraw %}
-"Business Capabilities": [{% include business-standards-api/acq-capabilities.html %}]
+"Business Capabilities": [{% include business-standards-api/acq/acq-capabilities.html %}]
 },
 {
 "Business-Standards": "Grants Management Standards",
@@ -37,7 +37,7 @@ permalink: /business-standards-api/
 "{{post.type |strip_newlines}}": {{ post.content | strip_html | strip_newlines }}{% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% raw %}}],{% endraw %}
-"Business Capabilities": [{% include business-standards-api/grants-capabilities.html %}]
+"Business Capabilities": [{% include business-standards-api/grants/grants-capabilities.html %}]
 },
 {
 "Business-Standards": "Electronic Records Management",
@@ -46,7 +46,7 @@ permalink: /business-standards-api/
 "{{post.type |strip_newlines}}": {{ post.content | strip_html | strip_newlines }}{% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% raw %}}],{% endraw %}
-"Business Capabilities": [{% include business-standards-api/erm-capabilities.html %}]
+"Business Capabilities": [{% include business-standards-api/erm/erm-capabilities.html %}]
 },
 {
 "Business-Standards": "Travel and Expense Management Standards",
@@ -55,5 +55,5 @@ permalink: /business-standards-api/
 "{{post.type |strip_newlines}}": {{ post.content | strip_html | strip_newlines }}{% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% raw %}}],{% endraw %}
-"Business Capabilities": [{% include business-standards-api/travel-capabilities.html %}]
+"Business Capabilities": [{% include business-standards-api/travel/travel-capabilities.html %}]
 }]
