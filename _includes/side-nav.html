@@ -17,9 +17,12 @@ where we provide an easy way to manage your navigation system
             </div>
 
             <div class="sidebar-menu">
-                <ul class="usa-sidenav-li">
+                <ul class="usa-sidenav-li usa-sidenav">
+
+
                     <li class="bs" style="background-color:#0f274a; margin-bottom: 5px;" >
-                        <a href="{{site.baseurl}}/fibf/">
+
+                        <a class="usa-nav__link{% if page.title == 'Federal Integrated Business Framework' %} usa-current{% endif %}"  href="{{site.baseurl}}/fibf/">
                             <div class="image-txt-container ">
                                 <img src="../assets/images/fibf-home.png" style="width:35px;margin-right:12px;" alt="FIBF Home">
                                 <img src="../assets/images/fibf-home-icon-update.png" style="width:35px;margin-right:12px;" class="img-top" alt="FIBF Home">
@@ -29,8 +32,9 @@ where we provide an easy way to manage your navigation system
 
                         </a>
                     </li>
+
                     <li class="bs" style="background-color:#0f274a; margin-bottom: 5px;" >
-                        <a href="{{site.baseurl}}/fibf-fm/">
+                        <a class="usa-nav__link{% if page.title == 'Federal Integrated Business Framework - Financial Management Standards' %} usa-current{% endif %}" href="{{site.baseurl}}/fibf-fm/">
                             <div class="image-txt-container ">
                             <img src="../assets/images/fm-icon.png" style="width:35px;margin-right:12px;" alt="Financial Management">
                                 <img src="../assets/images/icon.fm 2.png" style="width:35px;margin-right:12px;" class="img-top" alt="Financial Management">
@@ -54,7 +58,7 @@ where we provide an easy way to manage your navigation system
                         <div class="sidebar-submenu">
                             <ul style="list-style-type: none; background-color:#1b355c;">
                                 <li>
-                                    <a href="{{site.baseurl}}/fibf-hr/">
+                                    <a class="usa-nav__link{% if page.title == 'Federal Integrated Business Framework - HR Management Services - Talent Acquisition Standards' %} usa-current{% endif %}" href="{{site.baseurl}}/fibf-hr/">
                                         <div class="image-txt-container">
                                             <img src="../assets/images/talent-acq-icon.png" style="width:30px; margin-right:12px;" alt="Talent Acquisition">
                                             <span>Talent Acquisition
@@ -65,7 +69,7 @@ where we provide an easy way to manage your navigation system
 
                                 </li>
                                 <li>
-                                    <a href="{{site.baseurl}}/fibf-hr-td/">
+                                    <a class="usa-nav__link{% if page.title == 'Federal Integrated Business Framework - HR Management Services - Talent Development Standards' %} usa-current{% endif %}" href="{{site.baseurl}}/fibf-hr-td/">
                                         <div class="image-txt-container">
                                             <img src="../assets/images/talent-dev-icon.png" style="width:30px; margin-right:12px;" alt="Talent Development">
                                             <span>Talent Development
@@ -76,7 +80,7 @@ where we provide an easy way to manage your navigation system
 
                                 </li>
                                 <li>
-                                    <a href="{{site.baseurl}}/fibf-hr-epm/">
+                                    <a class="usa-nav__link{% if page.title == 'Federal Integrated Business Framework - HR Management Services - Employee Performance Management Standards' %} usa-current{% endif %}" href="{{site.baseurl}}/fibf-hr-epm/">
                                         <div class="image-txt-container">
                                             <img src="../assets/images/EPM-icon.png" style="width:30px; margin-right:12px;" alt="Employee Performance Management">
                                             <span>Employee Performance Management
@@ -87,7 +91,7 @@ where we provide an easy way to manage your navigation system
 
                                 </li>
                                 <li>
-                                    <a href="{{site.baseurl}}/fibf-hr-cb/">
+                                    <a class="usa-nav__link{% if page.title == 'Federal Integrated Business Framework - HR Management Services - Compensation and Benefits Standards' %} usa-current{% endif %}" href="{{site.baseurl}}/fibf-hr-cb/">
                                         <div class="image-txt-container">
                                             <img src="../assets/images/compensation-ben-icon.png" style="width:30px; margin-right:12px;" alt="Compensation and Benefits">
                                             <span>Compensation and Benefits
@@ -101,7 +105,7 @@ where we provide an easy way to manage your navigation system
                         </div>
                     </li>
                     <li class="bs" style="background-color:#0f274a; margin-bottom: 5px;">
-                        <a href="{{site.baseurl}}/fibf-procurement/">
+                        <a class="usa-nav__link{% if page.title == 'Federal Integrated Business Framework - Procurement' %} usa-current{% endif %}" href="{{site.baseurl}}/fibf-procurement/">
                             <div class="image-txt-container bs">
                             <img src="../assets/images/proc-icon.png" style="width:35px;margin-right:12px;" alt="Procurement">
                                 <img src="../assets/images/icon.procurement 2.png" style="width:35px;margin-right:12px;" class="img-top" alt="Procurement">
@@ -111,7 +115,7 @@ where we provide an easy way to manage your navigation system
                         </a>
                     </li>
                     <li class="bs" style="background-color:#0f274a; margin-bottom: 5px;">
-                        <a href="{{site.baseurl}}/fibf-gm/">
+                        <a class="usa-nav__link{% if page.title == 'Federal Integrated Business Framework - Grants Management' %} usa-current{% endif %}" href="{{site.baseurl}}/fibf-gm/">
                             <div class="image-txt-container">
                             <img src="../assets/images/grants-icon.png" style="width:35px;margin-right:12px;" alt="Grants Management">
                                 <img src="../assets/images/grants2.png" style="width:35px;margin-right:12px;" class="img-top" alt="Grants Management">
@@ -121,7 +125,7 @@ where we provide an easy way to manage your navigation system
                         </a>
                     </li>
                     <li class="bs" style="background-color:#0f274a; margin-bottom: 5px;">
-                        <a href="{{site.baseurl}}/fibf-travel/">
+                        <a class="usa-nav__link{% if page.title == 'Federal Integrated Business Framework - Travel and Expense Management' %} usa-current{% endif %}" href="{{site.baseurl}}/fibf-travel/">
                             <div class="image-txt-container">
                             <img src="../assets/images/travel-icon.png" style="width:35px;margin-right:12px;" alt="Travel and Expense Management">
                                 <img src="../assets/images/IMG_0331.png" style="width:35px;margin-right:12px;" class="img-top" alt="Travel and Expense Management">
@@ -130,7 +134,7 @@ where we provide an easy way to manage your navigation system
                         </a>
                     </li>
                     <li class="bs" style="background-color:#0f274a; margin-bottom: 5px;">
-                        <a href="{{site.baseurl}}/fibf-ERM/">
+                        <a class="usa-nav__link{% if page.title == 'Federal Integrated Business Framework - Electronic Records Management' %} usa-current{% endif %}" href="{{site.baseurl}}/fibf-ERM/">
                             <div class="image-txt-container">
                                 <img src="../assets/images/ERMicon (1).png" style="width:35px;margin-right:12px;" alt="Travel and Expense Management">
                                 <img src="../assets/images/ERMicon.png" style="width:35px;margin-right:12px;" class="img-top" alt="Travel and Expense Management">
