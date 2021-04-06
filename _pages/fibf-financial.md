@@ -8,6 +8,10 @@ sec-name: Treasury, Office of Financial Innovation and Transformation
 sec-name-href: https://www.fiscal.treasury.gov/fsservices/gov/fit/fit_home.htm
 sec-website: www.fiscal.treasury.gov/fsservices/gov/fit/fit_home.htm
 sec-website-href: https://www.fiscal.treasury.gov/fsservices/gov/fit/fit_home.htm
+lifecycle-pdf: assets/files/downloads/fm/lifecycle.pdf
+capabilities-pdf: assets/files/downloads/fm/capabilities.xlsx
+standard-data-elements-pdf: assets/files/downloads/fm/standard-data-elements.xlsx
+all-zip: assets/files/downloads/fm/all.zip
 lifecycle-source-document: https://www.fiscal.treasury.gov/files/fit/FMFunctionsandActivities.pdf
 lifecycle-content: fm/lifecycle.html
 capabilities-content: fm/capabilities.html
