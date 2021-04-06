@@ -39,7 +39,36 @@ This template is for a single page that does not have a date associated with it.
     </div>
   </div>
 </section>
-
+    <div class="usa-grid">
+      <div class="grid-container">
+        <ul class="usa-button-group">
+          {% if page.lifecycle-pdf %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.lifecycle-pdf}}" class="usa-button usa-button--accent-cool text-white">Federal
+            Business Lifecycle</a></li>
+          {% endif %}
+          {% if page.capabilities-pdf %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.capabilities-pdf}}" class="usa-button usa-button--accent-cool text-white">Business
+            Capabilities</a></li>
+          {% endif %}
+          {% if page.use-cases-pdf %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.use-cases-pdf}}" class="usa-button usa-button--accent-cool text-white">Business Use
+            Cases</a></li>
+          {% endif %}
+          {% if page.standard-data-elements-pdf %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.standard-data-elements-pdf}}" class="usa-button usa-button--accent-cool text-white">Standard
+            Data Elements</a></li>
+          {% endif %}
+          {% if page.performance-metrics-pdf %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.performance-metrics-pdf}}" class="usa-button usa-button--accent-cool text-white">Performance
+            Metrics</a></li>
+          {% endif %}
+          {% if page.all-zip %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.all-zip}}" class="usa-button text-white">Download
+            All</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
 <section  id="main-content" class="usa-section padding-top-2" >
   <div class="usa-grid">
     <div class="grid-container font-sans-sm">
