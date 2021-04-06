@@ -1,7 +1,7 @@
 ---
 layout: standards
 permalink: /fibf-procurement/
-title: Procurement Standards
+title: Federal Integrated Business Framework - Procurement
 sub-title: Procurement
 sec-title: Procurement Standards Lead
 sec-name: OMB

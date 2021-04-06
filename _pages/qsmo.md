@@ -1,6 +1,6 @@
 ---
 layout: qsmo
 permalink: /qsmo/
-title: QSMOs
+title: QSMO
 img: /assets/images/project-images/support-qsmo.png
 ---
