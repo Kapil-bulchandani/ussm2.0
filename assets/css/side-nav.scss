@@ -342,8 +342,11 @@ border-bottom: none;
 .usa-sidenav a{
     color: #ffffff;
 
-}
 
+}
+.usa-sidenav__item a{
+  font-size:15px;
+}
 
 .usa-sidenav a:hover {
     background-color: #f1f1f1;
@@ -351,8 +354,26 @@ border-bottom: none;
     text-decoration: none;
 }
 
+.usa-sidenav__item {
+border-top: none;
+}
+
+.usa-sidenav__sublist {
+    margin-left: 33px;
+}
+
+.usa-sidenav__sublist li {
+    border: none;
+    font-size: 0.8rem;
+}
 
 .usa-sidenav .usa-current-1  {
+    background-color: #f1f1f1;
+    color: #050608;
+    text-decoration: none;
+}
+
+.usa-sidenav__sublist .usa-current-1  {
     background-color: #f1f1f1;
     color: #050608;
     text-decoration: none;
