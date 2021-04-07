@@ -217,13 +217,6 @@
 
 
 
-.usa-sidenav-li a:hover {
-    background-color: #f1f1f1;
-    color: #07101c;
-    text-decoration: none;
-}
-
-
 
     .bs .img-top {
         display: none;
@@ -287,6 +280,9 @@
   right: 17px;
 }
 
+.usa-sidenav{
+border-bottom: none;
+}
 
 /*------scroll bar---------------------*/
 
@@ -343,11 +339,65 @@
     box-shadow: none;
 }
 
-.usa-sidenav-li a{
+.usa-sidenav a{
     color: #ffffff;
 
+
+}
+.usa-sidenav__item a{
+  font-size:15px;
 }
 
+.usa-sidenav a:hover {
+    background-color: #f1f1f1;
+    color: #050608;
+    text-decoration: none;
+}
+
+.usa-sidenav__item {
+border-top: none;
+}
+
+.usa-sidenav__sublist {
+    margin-left: 33px;
+}
+
+.usa-sidenav__sublist li {
+    border: none;
+    font-size: 0.8rem;
+}
+
+.usa-sidenav .usa-current-1  {
+    background-color: #f1f1f1;
+    color: #050608;
+    text-decoration: none;
+}
+
+.usa-sidenav__sublist .usa-current-1  {
+    background-color: #f1f1f1;
+    color: #050608;
+    text-decoration: none;
+}
+
+.sidebar-dropdown .usa-current-1{
+ background-color: #f1f1f1;
+     color: #050608;
+     text-decoration: none;
+}
+.bs .usa-current-1 .img-top{
+   display: inline;
+}
+ .bs .img-top {
+        display: none;
+        position: absolute;
+        top: 9px;
+        left: 21px;
+        z-index: 99;
+    }
+    .bs:hover .img-top {
+        display: inline;
+
+    }
 
 // @media screen and (min-width: 1500px) {
 //     .sidebar-brand {
