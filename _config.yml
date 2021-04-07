@@ -222,7 +222,11 @@ primary_navigation:
 # 1. Create an account with Search.gov https://search.usa.gov/signup
 # 2. Add a new site.
 # 3. Add your site/affiliate name here.
-
+searchgov:
+  endpoint: https://search.usa.gov # You should not change this.
+  affiliate: ussm_gov # replace this with your search.gov account
+  access_key: 1WaDqhNlgjWRxQU_q56to7FlutyliCg_eSvP6sgPsGk= # This is placeholder. Not private.
+  inline: false #this renders the results on the same domain. Otherwise, it will render the results in the search.gov domain
 ##########################################################################################
 # The values below here are more advanced and should only be
 # changed if you know what they do
