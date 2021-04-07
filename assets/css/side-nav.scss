@@ -217,13 +217,6 @@
 
 
 
-.usa-sidenav-li a:hover {
-    background-color: #f1f1f1;
-    color: #07101c;
-    text-decoration: none;
-}
-
-
 
     .bs .img-top {
         display: none;
@@ -236,24 +229,24 @@
         display: inline;
     }
 
-//
-// .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
-//   font-family: "Font Awesome 5 Free";
-//   font-weight: 900;
-//   content: "\f105";
-//   font-style: normal;
-//   display: inline-block;
-//   font-style: normal;
-//   font-variant: normal;
-//   text-rendering: auto;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   text-align: center;
-//   background: 0 0;
-//   position: absolute;
-//   right: 15px;
-//   top: 14px;
-// }
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  font-style: normal;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: 0 0;
+  position: absolute;
+  right: 15px;
+  top: 14px;
+}
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul {
   padding: 5px 0;
@@ -278,9 +271,9 @@
   margin-top: 0px;
 }
 
-// .sidebar-wrapper .sidebar-menu .sidebar-submenu {
-//   display: none;
-// }
+.sidebar-wrapper .sidebar-menu .sidebar-submenu {
+  display: none;
+}
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a:after {
   transform: rotate(90deg);
@@ -346,11 +339,44 @@ border-bottom: none;
     box-shadow: none;
 }
 
-.usa-sidenav-li a{
+.usa-sidenav a{
     color: #ffffff;
 
 }
 
+
+.usa-sidenav a:hover {
+    background-color: #f1f1f1;
+    color: #050608;
+    text-decoration: none;
+}
+
+
+.usa-sidenav .usa-current-1  {
+    background-color: #f1f1f1;
+    color: #050608;
+    text-decoration: none;
+}
+
+.sidebar-dropdown .usa-current-1{
+ background-color: #f1f1f1;
+     color: #050608;
+     text-decoration: none;
+}
+.bs .usa-current-1 .img-top{
+   display: inline;
+}
+ .bs .img-top {
+        display: none;
+        position: absolute;
+        top: 9px;
+        left: 21px;
+        z-index: 99;
+    }
+    .bs:hover .img-top {
+        display: inline;
+
+    }
 
 // @media screen and (min-width: 1500px) {
 //     .sidebar-brand {
