@@ -367,7 +367,17 @@ abbr{
   .all-std {
     display: flex;
     flex-direction: column;
-    } 
-
+    }
+    
+  /**************QSMO Filter and Card Ipad alignment ***********/
+  .qsmo-fltr {
+    flex: 0 0 auto;
+    width: 100%;
+    }  
+  .qsmo-crd {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+      
   }    
 
