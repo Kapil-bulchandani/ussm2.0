@@ -49,8 +49,8 @@ title: Federal Integrated Business Framework
 
 <section class="usa-section usa-graphic_list " style="background-color: #205493;" id="fibf-components">
     <div class="grid-container">
-        <div class="grid-row grid-gap">
-            <div class="tablet:grid-col">
+        <div class="grid-row grid-gap all-std">
+            <div class="tablet:grid-col margin-left-3">
                 <img src="{{site.baseurl}}/assets/images/fibf/fibf.plain.png" class="fibf-wheel" alt="fibf wheel">
             </div>
             <div class="tablet:grid-col text-base-lightest">
