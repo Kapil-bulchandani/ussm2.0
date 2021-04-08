@@ -291,7 +291,11 @@ a {
     font-weight: bold;
     margin-left: 0.75em;
 }
-.white-popup{position: relative;background: #FFF;padding: 20px;width: auto;max-width: 1200px;margin: 20px auto;}
+/*******Image POPUP******/
+.white-popup{position: relative;background: #FFF;padding: 20px;width: auto;max-width: 900px;margin: 20px auto;}
+.mfp-hide {
+  display: none !important; }
+/*************/
 
 @media screen and (min-width: 600px) {
   .usa-grid {
@@ -331,9 +335,6 @@ abbr{
   text-decoration: none !important;
 }
 
-
-
-
 @media screen and (max-width:640px) {
   /* Style for video(s) text on home page slider*/
   .slick-cloned .text-right .padding-2, #navigation00 .text-right .padding-2, #navigation01 .text-right .padding-2, #navigation02 .text-right .padding-2, #navigation03 .text-right .padding-2{
@@ -362,6 +363,11 @@ abbr{
 }
 
 }
+@media (max-width: 768px) {
+  .all-std {
+    display: flex;
+    flex-direction: column;
+    } 
 
-
+  }    
 
