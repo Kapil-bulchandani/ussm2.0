@@ -85,11 +85,11 @@
   left: 0px;
 }
 
-@media screen and (min-width: 768px) {
-  .page-wrapper.toggled .page-content {
-    padding-left: 280px;
-  }
-}
+// @media screen and (min-width: 768px) {
+//   .page-wrapper.toggled .page-content {
+//     padding-left: 280px;
+//   }
+// }
 @media screen and (max-width: 768px) {
   .page-wrapper.toggled .page-content .overlay {
     display: block;
@@ -359,7 +359,7 @@ border-top: none;
 }
 
 .usa-sidenav__sublist {
-    margin-left: 33px;
+    margin-left: 13px;
 }
 
 .usa-sidenav__sublist li {
@@ -399,11 +399,10 @@ border-top: none;
 
     }
 
-// @media screen and (min-width: 1500px) {
-//     .sidebar-brand {
-//         display: none;
-//     }
-//     #show-sidebar {
-//      display: none;
-//     }
-// }
+@media screen and (max-width: 1525px) {
+    .sidenav-main-1 {
+        display: none;
+
+    }
+
+}
