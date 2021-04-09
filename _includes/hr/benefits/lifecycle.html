@@ -2,7 +2,7 @@
 <div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
     <div><button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">HCM.130 Compensation Management (Payroll Administration)</button>
         <div id="b-a1" class="usa-accordion__content usa-prose">
-            <table aria-label="HCM.130 Compensation Management (Payroll Administration)">
+            <table id="hcm-130" aria-label="HCM.130 Compensation Management (Payroll Administration)">
                 <thead>
                 <tr>
                     <th class="capability_class" scope="col"><strong><strong><em>Identifier</em></strong></strong></th>
@@ -12,7 +12,7 @@
                 </thead>
                 <tbody>
 
-
+<!-- 
 
                 <tr>
                     <td valign="top" class="capability_class">
@@ -120,7 +120,7 @@
 
                     </td>
 
-                </tr>
+                </tr> -->
 
                 </tbody>
             </table>
@@ -128,7 +128,7 @@
     </div>
     <div><button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">HCM.140 Work Schedule and Leave Management</button>
         <div id="b-a2" class="usa-accordion__content usa-prose">
-            <table aria-label="HCM.140 Work Schedule and Leave Management">
+            <table id="hcm-140" aria-label="HCM.140 Work Schedule and Leave Management">
                 <thead>
                 <tr>
                     <th class="capability_class" scope="col"><strong><strong><em>Identifier</em></strong></strong></th>
@@ -138,7 +138,7 @@
                 </thead>
                 <tbody>
 
-
+<!-- 
                 <tr>
                     <td valign="top" class="capability_class">
                         HCM.140.010
@@ -290,7 +290,7 @@
 
                     </td>
 
-                </tr>
+                </tr> -->
 
 
 
@@ -309,3 +309,24 @@
         </div>
     </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+     $(document).ready(function(){
+         $.ajax({url: window.location.origin+"/business-standards-api/hr/business-lifecycle", success: function(result){              
+                var jObject = JSON.parse(result);
+                $.each(jObject, function(key, value)
+                {     
+                    $.each(value, function(innerKey, innerValue) {                                       
+                        var tr= '<tr>';
+                        var id = innerValue.ID ? innerValue.ID : innerValue.Identifier;
+                        tr += '<td class="capability_class" valign="top">' + id + '</td>'
+                        tr += '<td class="capability_class">' + innerValue.Activity + '</td>'
+                        tr += '<td class="capability_class" valign="top">' + innerValue.Description + '</td>'
+                        tr += '</tr>';
+                        $("#"+key+" > tbody").append(tr);
+                    });
+                });             
+            }});
+        });
+</script>
