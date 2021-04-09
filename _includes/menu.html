@@ -42,7 +42,7 @@ where we provide an easy way to manage your navigation system
             <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="{{ nav_id }}"><span>{{ nav.text | escape }}</span></button>
             <ul id="{{ nav_id }}" class="usa-nav__submenu">
               {% for subnav_item in nav.children %}
-              <li class="usa-nav__submenu-item">
+              <li class="usa-nav__submenu-item{% if subnav_item.sub == true %} ck{% endif %}">
                 {% if subnav_item.link == false %}
                 <span class="navheader text-accent-cool">{{ subnav_item.text | escape }}</span>
                 {% elsif subnav_item.tooltip %}
@@ -52,6 +52,11 @@ where we provide an easy way to manage your navigation system
                   {% asset external-link-alt.svg class="width-2 margin-left-05" alt="External Link" %}
                   {% endif %}
                 </a>
+                {% elsif subnav_item.sub == true %}
+                <a id="ck" class="subsubnav text-accent-cool" href="{{ subnav_item.permalink | prepend: site.baseurl }}">
+                  {{ subnav_item.text | escape }}
+                </a>
+
                 {% else %}
                 <a href="{{ subnav_item.permalink | prepend: site.baseurl }}">
                   {{ subnav_item.text | escape }}
@@ -79,3 +84,4 @@ where we provide an easy way to manage your navigation system
   </div>
 </header>
 <main id="main-content"></main>
+

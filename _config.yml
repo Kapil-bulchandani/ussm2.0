@@ -96,6 +96,34 @@ primary_navigation:
           permalink: /fibf-hr/
           show_in_menu: true
           show_in_footer: false
+        - text: 'Talent Acquisition'
+          permalink: /fibf-hr/
+          show_in_menu: true
+          show_in_footer: false
+          link: true
+          external: false
+          sub: true
+        - text: 'Talent Development'
+          permalink: /fibf-hr-td/
+          show_in_menu: true
+          show_in_footer: false
+          link: true
+          external: false
+          sub: true
+        - text: 'Employee Performance Management'
+          permalink: /ibf-hr-epm/
+          show_in_menu: true
+          show_in_footer: false
+          link: true
+          external: false
+          sub: true
+        - text: 'Compensation and Benefits'
+          permalink: /fibf-hr-cb/
+          show_in_menu: true
+          show_in_footer: false
+          link: true
+          external: false
+          sub: true
         - text: 'Procurement'
           permalink: /fibf-procurement/
           show_in_menu: true
