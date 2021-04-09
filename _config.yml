@@ -111,7 +111,7 @@ primary_navigation:
           external: false
           sub: true
         - text: 'Employee Performance Management'
-          permalink: /ibf-hr-epm/
+          permalink: /fibf-hr-epm/
           show_in_menu: true
           show_in_footer: false
           link: true
