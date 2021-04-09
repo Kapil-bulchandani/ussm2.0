@@ -164,9 +164,36 @@ title: Federal Integrated Business Framework
     <div class="usa-grid">
         <div class="grid-container font-sans-sm">
             <h3 class="text-primary">How is the FIBF being used?</h3>
-            <p>The HR Management Services FIBF standards served as the business requirements for the government-wide NewPay acquisition. The Financial Management and Grants Industry Demo Days leveraged the FIBF standards to communicate the government's needs to industry. Future acquisitions will continue to leverage the FIBF.</p>
-            <p>Additionally, the FIBF is the basis of the Readiness Assessment. The Readiness Assessment provides an understanding of government-wide and agency readiness as it relates to standards, technology, policy, and organizational maturity. This baseline of government-wide readiness serves as an input for decision making and policy for improving Federal mission support services.</p>
-        </div>
+            
+   <ol>
+   <li>
+   <p><strong>Translates Policy into Practice</strong><br>
+   The business standards enable the Federal Government to better coordinate and document common business needs based on authoritative policy across agencies, focusing on outcomes, capabilities, and data.
+</p>
+   </li>
+      <li>
+      <p><strong>Procurement</strong><br>
+      Agencies can use the business standards to buy mission support services. The business standards are a starting point for agencies’ requirements and allow industry to offer innovative solutions based on the business standards. </p>
+      </li>
+         <li>
+         <p><strong>Agency Investment Review</strong><br>
+         The business standards ensure agencies will be able to easily transition to a future solution offered in the QSMO marketplace. When agencies plan to use solutions from outside of the QSMO marketplace, the Investment Action Planning process leverages the business standards as a means to evaluate agency options.</p>
+         </li>
+            <li>
+            <p><strong>Assess Readiness for Shared Services</strong><br>
+            They support strategic planning to improve mission support services by giving decision makers the data needed to identify future opportunity areas for shared services. This includes identifying opportunities for modernization based on common themes, and policy reform based on agency feedback.</p>
+            </li>
+               <li>
+               <p><strong>Agreement Across Mission Support Functions</strong><br>
+               The business standards help obtain government-wide consensus on what business processes belong in each mission support functions to establish a shared understanding of the scope of services and coordination needed across shared services.</p>
+               </li>
+
+   
+   
+   </ol>
+         
+        
+   </div>
         <p ><a class="text-primary" style="float: right; "  href="#top">Back to top</a></p>
     </div>
 </section>
