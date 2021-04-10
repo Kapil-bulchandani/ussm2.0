@@ -274,6 +274,10 @@
 .sidebar-wrapper .sidebar-menu .sidebar-submenu {
   display: none;
 }
+.sidebar-wrapper .sidebar-menu .sidebar-submenu.active{
+  display: block;
+}
+
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a:after {
   transform: rotate(90deg);

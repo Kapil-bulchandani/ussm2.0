@@ -45,7 +45,7 @@ where we provide an easy way to manage your navigation system
                     </li>
 
 
-                    <li class="sidebar-dropdown usa-sidenav__item bs" style="background-color:#0f274a; margin-bottom: 5px;">
+                    <li class="sidebar-dropdown usa-sidenav__item bs{% if page.title contains 'Federal Integrated Business Framework - HR Management Services' %} active{% endif %}" style="background-color:#0f274a; margin-bottom: 5px;">
                         <a href="#" style="outline:none" class="usa-nav__link{% if page.title contains 'Federal Integrated Business Framework - HR Management Services' %} usa-current-1{% endif %}">
                             <div class="image-txt-container">
                                 <img src="../assets/images/hrm-icon.png" style="width:35px;margin-right:12px;" alt="HR Management Services">
@@ -55,7 +55,7 @@ where we provide an easy way to manage your navigation system
                             </div>
 
                         </a>
-                        <div class="sidebar-submenu" style="background-color:#1b355c;">
+                        <div class="sidebar-submenu{% if page.title contains 'Federal Integrated Business Framework - HR Management Services' %} active{% endif %}" style="background-color:#1b355c;">
                             <ul class="dropdown-menu usa-sidenav__sublist" >
                                 <li>
                                         <a class="usa-nav__link{% if page.title == 'Federal Integrated Business Framework - HR Management Services - Talent Acquisition' %} usa-current-1{% endif %}" href="{{site.baseurl}}/fibf-hr/" style="outline:none">
