@@ -406,16 +406,10 @@ border-top: none;
         display: none;
 
     }
-
-      .page-wrapper.toggled .page-content {
+     .page-wrapper.toggled .page-content {
         padding-left: 3px;
       }
 
 }
 
-@media (min-width: 64em) {
-.desktop\:grid-col-5 {
-    flex: 0 1 auto;
-    width: 41.6666666667%;
-}
-}
+
