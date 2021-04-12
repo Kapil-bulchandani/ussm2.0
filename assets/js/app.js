@@ -56,7 +56,7 @@ jQuery(document).ready(function () {
         {
             accordian: 'erm-lifecycle',
             table: 'erm-capabilities',
-            url: 'business-standards-api/erm',
+            url: '/business-standards-api/erm',
             hasSubsection: false
         },
         {
