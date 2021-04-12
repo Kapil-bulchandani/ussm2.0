@@ -94,13 +94,16 @@
   .page-wrapper.toggled .page-content .overlay {
     display: block;
   }
+
 }
+
 
 @media screen and (max-width: 1314px) {
   .fibf-wheel {
     margin-left: -2rem;
     margin-right: -2rem
   }
+
 }
 /*----------------show sidebar button----------------*/
 #show-sidebar {
@@ -210,11 +213,17 @@
 
 
 
-.usa-sidenav-li a:hover {
-    background-color: #f1f1f1;
-    color: #07101c;
-    text-decoration: none;
-}
+
+    .bs .img-top {
+        display: none;
+        position: absolute;
+        top: 9px;
+        left: 21px;
+        z-index: 99;
+    }
+    .bs:hover .img-top {
+        display: inline;
+    }
 
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
@@ -261,12 +270,19 @@
 .sidebar-wrapper .sidebar-menu .sidebar-submenu {
   display: none;
 }
+.sidebar-wrapper .sidebar-menu .sidebar-submenu.active{
+  display: block;
+}
+
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a:after {
   transform: rotate(90deg);
   right: 17px;
 }
 
+.usa-sidenav{
+border-bottom: none;
+}
 
 /*------scroll bar---------------------*/
 
@@ -304,7 +320,9 @@
   background: transparent;
 }
 
-
+.usa-button--base.usa-button--active{
+background-color:#0a0a0a;
+}
 /*-----------------------------chiller-theme-------------------------------------------------*/
 
 .chiller-theme .sidebar-wrapper {
@@ -323,17 +341,75 @@
     box-shadow: none;
 }
 
-.usa-sidenav-li a{
+.usa-sidenav a{
     color: #ffffff;
+
+
+}
+.usa-sidenav__item a{
+  font-size:15px;
+}
+
+.usa-sidenav a:hover {
+    background-color: #f1f1f1;
+    color: #050608;
+    text-decoration: none;
+}
+
+.usa-sidenav__item {
+border-top: none;
+}
+
+.usa-sidenav__sublist {
+    margin-left: 13px;
+}
+
+.usa-sidenav__sublist li {
+    border: none;
+    font-size: 0.8rem;
+}
+
+.usa-sidenav .usa-current-1  {
+    background-color: #f1f1f1;
+    color: #050608;
+    text-decoration: none;
+}
+
+.usa-sidenav__sublist .usa-current-1  {
+    background-color: #f1f1f1;
+    color: #050608;
+    text-decoration: none;
+}
+
+.sidebar-dropdown .usa-current-1{
+ background-color: #f1f1f1;
+     color: #050608;
+     text-decoration: none;
+}
+.bs .usa-current-1 .img-top{
+   display: inline;
+}
+ .bs .img-top {
+        display: none;
+        position: absolute;
+        top: 9px;
+        left: 21px;
+        z-index: 99;
+    }
+    .bs:hover .img-top {
+        display: inline;
+
+    }
+
+@media screen and (max-width: 768px) {
+    .sidenav-main-1 {
+        display: none;
+
+    }
+     .page-wrapper.toggled .page-content {
+        padding-left: 0px;
+      }
 
 }
 
 
-// @media screen and (min-width: 1500px) {
-//     .sidebar-brand {
-//         display: none;
-//     }
-//     #show-sidebar {
-//      display: none;
-//     }
-// }

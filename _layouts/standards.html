@@ -13,7 +13,6 @@ This template is for a single page that does not have a date associated with it.
 <section class="usa-section about margin-bottom-3 padding-y-105">
   <div class="usa-grid">
     <div class="grid-container">
-      {% include breadcrumbs.html %}
       <div class="priority-tag-line"><h1 class="margin-y-105 font-ui-l">{{ page.title }}</h1></div>
       <div class="grid-row fibf-wheel" >
       {% include fibf-circle.html %}
@@ -40,7 +39,36 @@ This template is for a single page that does not have a date associated with it.
     </div>
   </div>
 </section>
-
+    <div class="usa-grid">
+      <div class="grid-container">
+        <ul class="usa-button-group">
+          {% if page.lifecycle-pdf %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.lifecycle-pdf}}" class="usa-button usa-button--accent-cool text-white">Federal
+            Business Lifecycle</a></li>
+          {% endif %}
+          {% if page.capabilities-pdf %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.capabilities-pdf}}" class="usa-button usa-button--accent-cool text-white">Business
+            Capabilities</a></li>
+          {% endif %}
+          {% if page.use-cases-pdf %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.use-cases-pdf}}" class="usa-button usa-button--accent-cool text-white">Business Use
+            Cases</a></li>
+          {% endif %}
+          {% if page.standard-data-elements-pdf %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.standard-data-elements-pdf}}" class="usa-button usa-button--accent-cool text-white">Standard
+            Data Elements</a></li>
+          {% endif %}
+          {% if page.performance-metrics-pdf %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.performance-metrics-pdf}}" class="usa-button usa-button--accent-cool text-white">Performance
+            Metrics</a></li>
+          {% endif %}
+          {% if page.all-zip %}
+          <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.all-zip}}" class="usa-button text-white">Download
+            All</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
 <section  id="main-content" class="usa-section padding-top-2" >
   <div class="usa-grid">
     <div class="grid-container font-sans-sm">
@@ -48,7 +76,7 @@ This template is for a single page that does not have a date associated with it.
       <h2>Federal Business Lifecycle - {{ page.sub-title }}</h2>
       <div class="grid-row">
         <div class="desktop:grid-col-3">
-          <img src="{{ site.baseurl }}/assets/images/fibf/01.federal.business.lifecycle.sm.png" alt="" style="width:230px;">
+          <img src="{{ site.baseurl }}/assets/images/fibf/01.federal.business.lifecycle.sm.png" alt="" class="fibf-wheel-image">
         </div>
         <div class="desktop:grid-col-9">
           {% if page.lifecycle-source-document %}
@@ -66,14 +94,15 @@ This template is for a single page that does not have a date associated with it.
         {% else %}
         <p>Business Standards Under Development.</p>
         {% endif %}
+        <p><a class="text-primary" style="display:flex; justify-content:flex-end;"  href="#top">Back to top</a></p>
       </div>
-      <p><a class="text-primary" style="display:flex; justify-content:flex-end;"  href="#top">Back to top</a></p>
+      
 
       <div id="business_capabilities" class ="capabilities border-top-1px">
         <h2>Business Capabilities - {{ page.sub-title }}</h2>
         <div class="grid-row">
           <div class="desktop:grid-col-3">
-            <img src="{{ site.baseurl }}/assets/images/fibf/02.business.capabilities.sm.png" alt="" style="width:230px;">
+            <img src="{{ site.baseurl }}/assets/images/fibf/02.business.capabilities.sm.png" alt="" class="fibf-wheel-image">
           </div>
           <div class="desktop:grid-col-9">
             {% if page.capabilities-source-document %}
@@ -86,20 +115,25 @@ This template is for a single page that does not have a date associated with it.
           </div>
         </div>
         {% if page.capabilities-content %}
-        <div class="margin-y-5">
-        {% include {{ page.capabilities-content }} %}
+          <div class="usa-accordion usa-accordion--bordered margin-y-5">
+            <div><button class="usa-accordion__button" aria-expanded="false" aria-controls="capabilities"><img src="{{site.baseurl}}/assets/images/compass-regular.png" alt="Business Capabilities Navigation" style="width:32px;vertical-align: middle;margin-right: 10px;margin-top: -3px;">Business Capabilities Navigation</button>
+              <div id="capabilities" class="usa-accordion__content usa-prose">
+                {% include {{ page.capabilities-content }} %}
+              </div>
+            </div>
         </div>
         {% else %}
         <p>Business Standards Under Development.</p>
         {% endif %}
+        <p><a class="text-primary" style="display:flex; justify-content:flex-end;"  href="#top">Back to top</a></p>
         </div>
-      <p><a class="text-primary" style="display:flex; justify-content:flex-end;"  href="#top">Back to top</a></p>
+      
 
       <div id="business_use_cases" class ="use_cases border-top-1px">
         <h2>Business Use Cases - {{ page.sub-title }}</h2>
         <div class="grid-row">
           <div class="desktop:grid-col-3">
-            <img src="{{ site.baseurl }}/assets/images/fibf/03.business.use.cases.sm.png" alt="" style="width:230px;">
+            <img src="{{ site.baseurl }}/assets/images/fibf/03.business.use.cases.sm.png" alt="" class="fibf-wheel-image">
           </div>
           <div class="desktop:grid-col-9">
             <p><i>A set of agency “stories” that document the key activities, inputs, outputs, and other LOB intersections to describe how the Federal government operates.</i>
@@ -109,16 +143,17 @@ This template is for a single page that does not have a date associated with it.
             {% else %}
             <p>Business Standards Under Development.</p>
             {% endif %}
+            <p><a class="text-primary" style="display:flex; justify-content:flex-end; margin-top: 95px;"  href="#top">Back to top</a></p>
           </div>
         </div>
-        <p><a class="text-primary" style="display:flex; justify-content:flex-end; margin-top: 55px;"  href="#top">Back to top</a></p>
+        
 
       </div>
       <div id="standard_data_elements" class ="data_elements border-top-1px">
         <h2>Standard Data Elements - {{ page.sub-title }}</h2>
         <div class="grid-row">
           <div class="desktop:grid-col-3">
-            <img src="{{ site.baseurl }}/assets/images/fibf/04.standard.data.elements.sm.png" alt="" style="width:230px;">
+            <img src="{{ site.baseurl }}/assets/images/fibf/04.standard.data.elements.sm.png" alt="" class="fibf-wheel-image">
           </div>
           <div class="desktop:grid-col-9">
             <p><i>Identify the minimum data fields required to support the inputs and outputs noted in the use cases and capabilities.</i>
@@ -128,7 +163,7 @@ This template is for a single page that does not have a date associated with it.
             {% else %}
             <p>Business Standards Under Development.</p>
             {% endif %}
-            <p><a class="text-primary" style="display:flex; justify-content:flex-end; margin-top: 45px;"  href="#top">Back to top</a></p>
+            <p><a class="text-primary" style="display:flex; justify-content:flex-end; margin-top: 75px;"  href="#top">Back to top</a></p>
           </div>
         </div>
 
@@ -137,7 +172,7 @@ This template is for a single page that does not have a date associated with it.
         <h2>Performance Metrics - {{ page.sub-title }}</h2>
         <div class="grid-row">
           <div class="desktop:grid-col-3">
-            <img src="{{ site.baseurl }}/assets/images/fibf/05.performance.metrics.sm.png" alt="" style="width:230px;">
+            <img src="{{ site.baseurl }}/assets/images/fibf/05.performance.metrics.sm.png" alt="" class="fibf-wheel-image">
           </div>
           <div class="desktop:grid-col-9">
             <p><i>Define how the government measures successful delivery of outcomes based on timeliness, efficiency, and accuracy targets.</i>
@@ -147,7 +182,7 @@ This template is for a single page that does not have a date associated with it.
             {% else %}
             <p>Business Standards Under Development.</p>
             {% endif %}
-            <p><a class="text-primary" style="display:flex; justify-content:flex-end; margin-top: 45px;"  href="#top">Back to top</a></p>
+            <p><a class="text-primary" style="display:flex; justify-content:flex-end; margin-top: 75px;"  href="#top">Back to top</a></p>
           </div>
         </div>
 
