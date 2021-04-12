@@ -9,6 +9,7 @@ jQuery(document).ready(function() {
            'excelHtml5',
            'csvHtml5',
            'pdfHtml5',
+           'print',
            'pageLength'
        ]
    } );
@@ -20,10 +21,10 @@ jQuery(document).ready(function() {
        var modal = document.getElementById('myModal');
 
        // Get the image and insert it inside the modal - use its "alt" text as a caption
-       var img = document.getElementById('myImg');
+       var img1 = document.getElementById('myImg');
        var modalImg = document.getElementById("img01");
        var captionText = document.getElementById("caption");
-       img.onclick = function(){
+       img1.onclick = function(){
          modal.style.display = "block";
          modalImg.src = this.src;
          captionText.innerHTML = this.alt;
@@ -36,4 +37,9 @@ jQuery(document).ready(function() {
        span.onclick = function() {
          modal.style.display = "none";
      }
+
+  
+
+
+
 
