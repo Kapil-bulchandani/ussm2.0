@@ -1,5 +1,5 @@
 <p><i>Select from the list of available functions to view associated activities</i></p>
-<div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
+<div id="acq-lifecycle" class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
     <div><button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1"> ACQ.010 Acquisition Planning </button>
         <div id="b-a1" class="usa-accordion__content usa-prose">
             <table id="acq-010" aria-label="ACQ.010 Acquisition Planning">
@@ -844,24 +844,3 @@
         </div>
     </div>
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript">
-     $(document).ready(function(){
-         $.ajax({url: window.location.origin+"/business-standards-api/acq/business-lifecycle", success: function(result){              
-                var jObject = JSON.parse(result);
-                $.each(jObject, function(key, value)
-                {     
-                    $.each(value, function(innerKey, innerValue) {                                       
-                        var tr= '<tr>';
-                        var id = innerValue.ID ? innerValue.ID : innerValue.Identifier;
-                        tr += '<td class="capability_class" valign="top">' + id + '</td>'
-                        tr += '<td class="capability_class">' + innerValue.Activity + '</td>'
-                        tr += '<td class="capability_class" valign="top">' + innerValue.Description + '</td>'
-                        tr += '</tr>';
-                        $("#"+key+" > tbody").append(tr);
-                    });
-                });             
-            }});
-        });
-</script>

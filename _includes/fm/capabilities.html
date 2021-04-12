@@ -1,5 +1,6 @@
-<table id="fm-capabilities" data-page-length="15" class="display responsive" style="width:100%;" aria-label="Financial Management Business Capabilities">
-        <thead>
+<table id="fm-capabilities" data-page-length="15" class="display responsive" style="width:100%;"
+    aria-label="Financial Management Business Capabilities">
+    <thead>
         <tr>
             <th scope="col">Capability ID</th>
             <th scope="col">Function</th>
@@ -12,40 +13,7 @@
             <th scope="col">Business Capability Statement</th>
             <th scope="col">Authoritative Reference</th>
         </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-         $.ajax({url: window.location.origin+"/business-standards-api/fm/", success: function(result){
-               var jObject=JSON.parse(result);
-               $.each(jObject, function (key, value) {
-              if(key=="Business Capabilities")
-               {
-                   $.each(value,function(key,value)
-                   {
-                       var tr='<tr>';
-                        $.each(value,function(key,value){
-                            tr+='<td class="capability_class">'+value+'</td>'     
-                        });
-                        tr+='</tr>';
-                        $("#fm-capabilities > tbody").append(tr);
-                    });
-                    $("#fm-capabilities").DataTable({
-                                                        responsive: true,
-                                                        dom: 'Bfrtip',
-                                                        buttons: [
-                                                            'copyHtml5',
-                                                            'excelHtml5',
-                                                            'csvHtml5',
-                                                            'pdfHtml5',
-                                                            'pageLength'
-                                                        ]
-                                                    } );
-               }               
-               });
-            }});
-        });
-    </script>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
