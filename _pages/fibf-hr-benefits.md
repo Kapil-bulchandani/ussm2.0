@@ -12,6 +12,6 @@ sec-references-href: https://www.opm.gov/services-for-agencies/hr-line-of-busine
 capabilities-pdf: assets/files/downloads/hr/benefits/capabilities.xlsx
 lifecycle-content: hr/benefits/lifecycle.html
 capabilities-content: hr/benefits/capabilities.html
-lifecycle-source-document-type: xls
-lifecycle-source-document: assets/files/downloads/hr/benefits/capabilities.xlsx
+capabilities-source-document-type: xls
+capabilities-source-document: assets/files/downloads/hr/benefits/capabilities.xlsx
 ---
