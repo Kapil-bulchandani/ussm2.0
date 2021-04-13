@@ -1,19 +1,6 @@
+
 // Add your custom javascript here
 console.log("Hi from Federalist");
-jQuery(document).ready(function() {
-   jQuery('#table_id').DataTable( {
-       responsive: true,
-       dom: 'Bfrtip',
-       buttons: [
-           'copyHtml5',
-           'excelHtml5',
-           'csvHtml5',
-           'pdfHtml5',
-           'print',
-           'pageLength'
-       ]
-   } );
-} );
 
 jQuery(document).ready(function () {
 
@@ -21,43 +8,43 @@ jQuery(document).ready(function () {
         {
             accordian: 'hr-benefits-lifecycle',
             table: 'hr-benefits-capabilities',
-            url: '/business-standards-api/hr',
+            url: '../business-standards-api/hr',
             hasSubsection: true
         },
         {
             accordian: 'fm-lifecycle',
             table: 'fm-capabilities',
-            url: '/business-standards-api/fm',
+            url: '../business-standards-api/fm',
             hasSubsection: false
         },
         {
             accordian: 'erm-lifecycle',
             table: 'erm-capabilities',
-            url: '/business-standards-api/erm',
+            url: '../business-standards-api/erm',
             hasSubsection: false
         },
         {
             accordian: 'grants-lifecycle',
             table: 'grants-capabilities',
-            url: '/business-standards-api/grants',
+            url: '../business-standards-api/grants',
             hasSubsection: false
         },
         {
             accordian: 'procurment-lifecycle',
             table: 'procurement-capabilities',
-            url: '/business-standards-api/procurement',
+            url: '../business-standards-api/procurement',
             hasSubsection: false
         },
         {
             accordian: 'travel-lifecycle',
             table: 'travel-capabilities',
-            url: '/business-standards-api/travel',
+            url: '../business-standards-api/travel',
             hasSubsection: false
         },
         {
             accordian: 'acq-lifecycle',
             table: 'acq-capabilities',
-            url: '/business-standards-api/acq',
+            url: '../business-standards-api/acq',
             hasSubsection: false
         }
     ];
@@ -68,9 +55,7 @@ jQuery(document).ready(function () {
         let accordian = jQuery('#' + page.accordian);
 
         if (table.length > 0 || accordian.length > 0) {
-            jQuery.ajax({
-                url: window.location.origin + page.url,
-                success: function (result) {
+            jQuery.get(page.url, function (result) {
                     var jObject = JSON.parse(result);
                     if (page.hasSubsection) {
                         jObject = jObject[0];
@@ -118,7 +103,7 @@ jQuery(document).ready(function () {
                         }
                     });
                 }
-            });
+            );
         }
     });
 });
