@@ -14,4 +14,8 @@ lifecycle-content: travel/lifecycle.html
 capabilities-content: travel/capabilities.html
 data-elements-content: travel/data-elements.html
 use-cases-content: travel/use-cases.html
+capabilities-source-document-type: xls
+lifecycle-source-document-type: xls
+lifecycle-source-document: assets/files/downloads/travel/lifecycle.xlsx
+capabilities-source-document: assets/files/downloads/travel/capabilities.xlsx
 ---

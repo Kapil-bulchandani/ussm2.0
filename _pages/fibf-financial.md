@@ -18,4 +18,6 @@ capabilities-content: fm/capabilities.html
 capabilities-source-document: https://tfm.fiscal.treasury.gov/v1/p6/c950.html
 use-cases-content: fm/use-cases.html
 data-elements-content: fm/data-elements.html
+capabilities-source-document-type: xls
+lifecycle-source-document-type: pdf
 ---

@@ -13,4 +13,7 @@ all-zip: assets/files/downloads/erm/all.zip
 lifecycle-content: erm/lifecycle.html
 capabilities-content: erm/capabilities.html
 use-cases-content: erm/use-cases.html
+capabilities-source-document-type: xls
+lifecycle-source-document-type: xls
+capabilities-source-document: assets/files/downloads/erm/capabilities.xlsx
 ---

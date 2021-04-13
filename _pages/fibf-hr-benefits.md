@@ -9,7 +9,9 @@ sec-website: www.opm.gov/services-for-agencies/hr-line-of-business/
 sec-website-href: www.opm.gov/services-for-agencies/hr-line-of-business/
 sec-references: Human Capital Business Reference Model
 sec-references-href: https://www.opm.gov/services-for-agencies/hr-line-of-business/hc-business-reference-model/
-capabilities-file: assets/files/downloads/hr/benefits/capabilities.xlsx
+capabilities-pdf: assets/files/downloads/hr/benefits/capabilities.xlsx
 lifecycle-content: hr/benefits/lifecycle.html
 capabilities-content: hr/benefits/capabilities.html
+lifecycle-source-document-type: xls
+lifecycle-source-document: assets/files/downloads/hr/benefits/capabilities.xlsx
 ---

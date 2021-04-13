@@ -80,7 +80,8 @@ This template is for a single page that does not have a date associated with it.
         </div>
         <div class="desktop:grid-col-9">
           {% if page.lifecycle-source-document %}
-            <p style="word-wrap: break-word;"><i>Source Document:</i> <img src="{{ site.baseurl }}/assets/images/icon.pdf.png" valign="middle" alt="PDF">
+            <p style="word-wrap: break-word;"><i>Source Document:</i>
+              <img src="{{ site.baseurl }}/assets/images/icon.{{page.lifecycle-source-document-type}}.png" valign="middle" alt="">
               <a href="{{page.lifecycle-source-document}}">{{ page.lifecycle-source-document }}</a>
             </p>
           {% endif %}
@@ -106,7 +107,7 @@ This template is for a single page that does not have a date associated with it.
           </div>
           <div class="desktop:grid-col-9">
             {% if page.capabilities-source-document %}
-            <p><i>Source Document:</i> <img src="{{ site.baseurl }}/assets/images/icon.pdf.png" valign="middle" alt="PDF">
+            <p><i>Source Document:</i> <img src="{{ site.baseurl }}/assets/images/icon.{{page.capabilities-source-document-type}}.png" valign="middle" alt="">
               <a href="{{page.capabilities-source-document}}">{{ page.capabilities-source-document }}</a>
             </p>
             {% endif %}
