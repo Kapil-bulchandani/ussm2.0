@@ -1,7 +1,7 @@
 ---
 layout: standards
 permalink: /fibf-travel/
-title: Federal Integrated Business Framework - Travel and Expense Management
+title: Federal Integrated Business Framework - Travel and Expense Management Standards
 sub-title: Travel and Expense Management
 sec-title: Travel and Expense Management Standards Lead
 sec-name: GSA
