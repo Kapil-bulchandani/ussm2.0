@@ -1,7 +1,7 @@
 ---
 layout: standards
 permalink: /fibf-gm/
-title: Federal Integrated Business Framework - Grants Management
+title: Federal Integrated Business Framework - Grants Management Standards
 sub-title: Grants Management
 sec-title: Grants Management Standards Lead
 sec-name: HHS
