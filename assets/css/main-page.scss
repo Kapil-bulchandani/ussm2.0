@@ -291,6 +291,11 @@ a {
     font-weight: bold;
     margin-left: 0.75em;
 }
+
+[type="search"], .usa-search__input  {      /****DataTable Search*******/
+  float: none;
+}
+
 /*******Image POPUP******/
 .white-popup{position: relative;background: #FFF;padding: 20px;width: auto;max-width: 900px;margin: 20px auto;}
 .mfp-hide {
