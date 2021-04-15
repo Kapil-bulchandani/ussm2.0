@@ -89,7 +89,7 @@ This template is for a single page that does not have a date associated with it.
           {% if page.lifecycle-source-document %}
           <p style="word-wrap: break-word;">
             <img src="{{ site.baseurl }}/assets/images/icon.{{page.lifecycle-source-document-type}}.png" valign="middle" alt="">
-            <a href="{{page.lifecycle-source-document}}">{{page.sub-title}} Business Lifecycle</a>
+            <a href="{{ site.baseurl }}/{{page.lifecycle-source-document}}">{{page.sub-title}} Business Lifecycle</a>
           </p>
           {% endif %}
         </div>
@@ -115,7 +115,7 @@ This template is for a single page that does not have a date associated with it.
             </p>
             {% if page.capabilities-source-document %}
             <p><img src="{{ site.baseurl }}/assets/images/icon.{{page.capabilities-source-document-type}}.png" valign="middle" alt="">
-              <a href="{{page.capabilities-source-document}}">{{page.sub-title}} Business Capabilities</a>
+              <a href="{{ site.baseurl }}/{{page.capabilities-source-document}}">{{page.sub-title}} Business Capabilities</a>
             </p>
             {% endif %}
           </div>
