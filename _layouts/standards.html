@@ -41,7 +41,9 @@ This template is for a single page that does not have a date associated with it.
 </section>
     <div class="usa-grid">
       <div class="grid-container">
-        <h2 class="text-center text-primary">Download Grants Management Artifacts</h2>
+        {% if page.lifecycle-pdf or page.use-cases-pdf or page.capabilities-pdf or page.standard-data-elements-pdf or page.performance-metrics-pdf  %}
+          <h2 class="text-center text-primary">Download {{page.sub-title}} Artifacts</h2>
+        {% endif %}
         <ul class="usa-button-group">
           {% if page.lifecycle-pdf %}
           <li class="usa-button-group__item"><a href="{{ site.baseurl }}/{{page.lifecycle-pdf}}" class="usa-button usa-button--accent-cool text-white">Federal
@@ -80,15 +82,16 @@ This template is for a single page that does not have a date associated with it.
           <img src="{{ site.baseurl }}/assets/images/fibf/01.federal.business.lifecycle.sm.png" alt="" class="fibf-wheel-image">
         </div>
         <div class="desktop:grid-col-9">
-          {% if page.lifecycle-source-document %}
-            <p style="word-wrap: break-word;"><i>Source Document:</i>
-              <img src="{{ site.baseurl }}/assets/images/icon.{{page.lifecycle-source-document-type}}.png" valign="middle" alt="">
-              <a href="{{page.lifecycle-source-document}}">{{ page.lifecycle-source-document }}</a>
-            </p>
-          {% endif %}
+
           <p><i>Federal Business Lifecycles, functional areas, functions, and activities serve as the basis for a common understanding of what services agencies need and solutions should offer.</i></p>
           <p><i>Functions: Breakdown of a functional area into categories of services provided to customers.</i></p>
           <p><i>Activities: Within a function, processes that provide identifiable outputs/outcomes to customers are defined as activities.</i></p>
+          {% if page.lifecycle-source-document %}
+          <p style="word-wrap: break-word;">
+            <img src="{{ site.baseurl }}/assets/images/icon.{{page.lifecycle-source-document-type}}.png" valign="middle" alt="">
+            <a href="{{ site.baseurl }}/{{page.lifecycle-source-document}}">{{page.sub-title}} Business Lifecycle</a>
+          </p>
+          {% endif %}
         </div>
       </div>
       {% if page.lifecycle-content %}
@@ -107,13 +110,14 @@ This template is for a single page that does not have a date associated with it.
             <img src="{{ site.baseurl }}/assets/images/fibf/02.business.capabilities.sm.png" alt="" class="fibf-wheel-image">
           </div>
           <div class="desktop:grid-col-9">
-            {% if page.capabilities-source-document %}
-            <p><i>Source Document:</i> <img src="{{ site.baseurl }}/assets/images/icon.{{page.capabilities-source-document-type}}.png" valign="middle" alt="">
-              <a href="{{page.capabilities-source-document}}">{{ page.capabilities-source-document }}</a>
-            </p>
-            {% endif %}
+
             <p><i>Business Capabilities are the outcome-based business needs mapped to Federal government authoritative references, forms, and data standards.</i>
             </p>
+            {% if page.capabilities-source-document %}
+            <p><img src="{{ site.baseurl }}/assets/images/icon.{{page.capabilities-source-document-type}}.png" valign="middle" alt="">
+              <a href="{{ site.baseurl }}/{{page.capabilities-source-document}}">{{page.sub-title}} Business Capabilities</a>
+            </p>
+            {% endif %}
           </div>
         </div>
         {% if page.capabilities-content %}
