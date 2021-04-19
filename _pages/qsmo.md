@@ -1,6 +1,6 @@
 ---
 layout: qsmo
 permalink: /qsmo/
-title: Quality Service Management Offices (QSMOs)
+title: QSMO
 img: /assets/images/project-images/support-qsmo.png
 ---

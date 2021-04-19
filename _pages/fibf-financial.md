@@ -12,10 +12,10 @@ lifecycle-pdf: assets/files/downloads/fm/lifecycle.pdf
 capabilities-pdf: assets/files/downloads/fm/capabilities.xlsx
 standard-data-elements-pdf: assets/files/downloads/fm/standard-data-elements.xlsx
 all-zip: assets/files/downloads/fm/all.zip
-lifecycle-source-document: assets/files/downloads/fm/lifecycle.pdf
+lifecycle-source-document: https://www.fiscal.treasury.gov/files/fit/FMFunctionsandActivities.pdf
 lifecycle-content: fm/lifecycle.html
 capabilities-content: fm/capabilities.html
-capabilities-source-document: assets/files/downloads/fm/capabilities.xlsx
+capabilities-source-document: https://tfm.fiscal.treasury.gov/v1/p6/c950.html
 use-cases-content: fm/use-cases.html
 data-elements-content: fm/data-elements.html
 capabilities-source-document-type: xls
