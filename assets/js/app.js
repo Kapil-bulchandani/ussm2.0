@@ -88,12 +88,12 @@ jQuery(document).ready(function () {
                             jQuery.each(outerValue, function (key1, value1) {
                                 jQuery.each(value1, function (key2, value2) {
                                     let innerTable = jQuery("#" + key2 + " > tbody");
-                                    if (innerTable) {
+                                    if (innerTable && typeof(value2) != 'string') {
                                         jQuery.each(value2, function (key3, value3) {
                                             var tr = '<tr>';
                                             var id = value3.ID ? value3.ID : value3.Identifier;
                                             tr += '<td class="capability_class" valign="top">' + id + '</td>'
-                                            tr += '<td class="capability_class">' + value3.Activity + '</td>'
+                                            tr += '<td class="capability_class" valign="top">' + value3.Activity + '</td>'
                                             tr += '<td class="capability_class" valign="top">' + value3.Description + '</td>'
                                             tr += '</tr>';
                                             innerTable.append(tr);
