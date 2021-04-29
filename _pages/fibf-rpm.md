@@ -1,6 +1,6 @@
 ---
 layout: standards
-permalink: /fibf-rpm/
+permalink: /fibf-RPM/
 title: Federal Integrated Business Framework - Real Property Management
 sub-title: General Service Administration
 sec-title: General Service Administration Lead
