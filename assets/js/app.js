@@ -46,6 +46,12 @@ jQuery(document).ready(function () {
             table: 'acq-capabilities',
             url: '../business-standards-api/acq',
             hasSubsection: false
+        },
+        {
+            accordian: 'rpm-lifecycle',
+            table: 'rpm-capabilities',
+            url: '../business-standards-api/rpm',
+            hasSubsection: false
         }
     ];
 

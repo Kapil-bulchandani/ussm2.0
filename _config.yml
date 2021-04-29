@@ -140,6 +140,10 @@ primary_navigation:
           permalink: /fibf-ERM/
           show_in_menu: true
           show_in_footer: false
+        - text: 'Real Property Management'
+          permalink: /fibf-RPM/
+          show_in_menu: true
+          show_in_footer: false
     - text: 'QSMO'
       href: /pages/qsmo.md
       permalink: /qsmo/
@@ -282,7 +286,8 @@ collections:
     output: true
   travel:
     output: true
-
+  rpm:
+    output: true
 
 markdown: kramdown
 plugins:
