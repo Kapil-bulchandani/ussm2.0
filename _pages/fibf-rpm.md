@@ -3,7 +3,7 @@ layout: standards
 permalink: /fibf-RPM/
 title: Federal Integrated Business Framework - Real Property Management
 sub-title: Real Property Management
-sec-title: Real Property Management Lead
+sec-title: Real Property Management Standards Lead
 sec-name: GSA
 lifecycle-pdf: assets/files/downloads/rpm/lifecycle.xlsx
 capabilities-pdf: assets/files/downloads/rpm/capabilities.xlsx
