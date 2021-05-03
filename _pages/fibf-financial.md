@@ -9,13 +9,13 @@ sec-name-href: https://www.fiscal.treasury.gov/fsservices/gov/fit/fit_home.htm
 sec-website: www.fiscal.treasury.gov/fsservices/gov/fit/fit_home.htm
 sec-website-href: https://www.fiscal.treasury.gov/fsservices/gov/fit/fit_home.htm
 lifecycle-pdf: assets/files/downloads/fm/lifecycle.pdf
-capabilities-pdf: assets/files/downloads/fm/capabilities.xlsx
-standard-data-elements-pdf: assets/files/downloads/fm/standard-data-elements.xlsx
-all-zip: assets/files/downloads/fm/all.zip
+capabilities-pdf: assets/files/downloads/fm/financial-management-capabilities.xlsx
+standard-data-elements-pdf: assets/files/downloads/fm/financial-management-standard-data-elements.xlsx
+all-zip: assets/files/downloads/fm/financial-management-all.zip
 lifecycle-source-document: assets/files/downloads/fm/lifecycle.pdf
 lifecycle-content: fm/lifecycle.html
 capabilities-content: fm/capabilities.html
-capabilities-source-document: assets/files/downloads/fm/capabilities.xlsx
+capabilities-source-document: assets/files/downloads/fm/financial-management-capabilities.xlsx
 use-cases-content: fm/use-cases.html
 data-elements-content: fm/data-elements.html
 capabilities-source-document-type: xls

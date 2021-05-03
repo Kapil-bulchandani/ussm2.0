@@ -7,13 +7,13 @@ sec-title: Electronic Records Management Lead
 sec-name: National Archives and Records Administration
 sec-website: https://www.archives.gov/records-mgmt/policy/fermi
 sec-website-href: https://www.archives.gov/records-mgmt/policy/fermi
-capabilities-pdf: assets/files/downloads/erm/capabilities.xlsx
-use-cases-pdf: assets/files/downloads/erm/use-cases.zip
-all-zip: assets/files/downloads/erm/all.zip
+capabilities-pdf: assets/files/downloads/erm/electronic-records-management-capabilities.xlsx
+use-cases-pdf: assets/files/downloads/erm/electronic-records-management-use-cases.zip
+all-zip: assets/files/downloads/erm/electronic-records-management-all.zip
 lifecycle-content: erm/lifecycle.html
 capabilities-content: erm/capabilities.html
 use-cases-content: erm/use-cases.html
 capabilities-source-document-type: xls
 lifecycle-source-document-type: xls
-capabilities-source-document: assets/files/downloads/erm/capabilities.xlsx
+capabilities-source-document: assets/files/downloads/erm/electronic-records-management-capabilities.xlsx
 ---
