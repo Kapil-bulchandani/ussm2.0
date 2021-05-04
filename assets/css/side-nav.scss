@@ -83,6 +83,7 @@
 
 .page-wrapper.toggled .sidebar-wrapper {
   left: 0px;
+  top: 35px;
 }
 
 @media screen and (min-width: 768px) {
@@ -109,7 +110,7 @@
 #show-sidebar {
   position: fixed;
   left: 0;
-  top: 10px;
+  top: 35px;
   border-radius: 0 4px 4px 0px;
   width: 35px;
   transition-delay: 0.3s;
