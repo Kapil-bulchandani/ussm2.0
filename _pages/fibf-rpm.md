@@ -6,7 +6,7 @@ sub-title: Real Property Management
 sec-title: Real Property Management Standards Lead
 sec-name: GSA
 lifecycle-pdf: assets/files/downloads/rpm/Real-Property-Management-Federal-Business-Lifecycle.xlsx
-capabilities-pdf: assets/files/downloads/rpm/Real-Property-Management-Business-capabilities.xlsx
+capabilities-pdf: assets/files/downloads/rpm/Real-Property-Management-Business-Capabilities.xlsx
 all-zip: assets/files/downloads/rpm/Real-Property-Management-Download-All.zip
 lifecycle-content: rpm/lifecycle.html
 capabilities-content: rpm/capabilities.html
