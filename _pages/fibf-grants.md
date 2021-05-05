@@ -8,7 +8,7 @@ sec-name: HHS
 lifecycle-pdf: assets/files/downloads/grants/Grants-Management-Federal-Business-Lifecycle.xlsx
 capabilities-pdf: assets/files/downloads/grants/Grants-Management-Business-Capabilities.xlsx
 use-cases-pdf: assets/files/downloads/grants/Grants-Management-Business-Use-Cases.zip
-standard-data-elements-pdf: assets/files/downloads/grants/Grants-Management-standard-data-elements.xlsm
+standard-data-elements-pdf: assets/files/downloads/grants/grants-management-standard-data-elements.xlsm.xlsm
 all-zip: assets/files/downloads/grants/Grants-Management-Download-All.zip
 lifecycle-content: grants/lifecycle.html
 capabilities-content: grants/capabilities.html
