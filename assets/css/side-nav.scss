@@ -83,7 +83,6 @@
 
 .page-wrapper.toggled .sidebar-wrapper {
   left: 0px;
-  top: 35px;
 }
 
 @media screen and (min-width: 768px) {
@@ -110,7 +109,7 @@
 #show-sidebar {
   position: fixed;
   left: 0;
-  top: 35px;
+  top: 10px;
   border-radius: 0 4px 4px 0px;
   width: 35px;
   transition-delay: 0.3s;
@@ -215,16 +214,7 @@
 
 
 
-    .bs .img-top {
-        display: none;
-        position: absolute;
-        top: 9px;
-        left: 21px;
-        z-index: 99;
-    }
-    .bs:hover .img-top {
-        display: inline;
-    }
+
 
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
@@ -351,7 +341,13 @@ background-color:#0a0a0a;
   font-size:15px;
 }
 
-.usa-sidenav a:hover, .usa-sidenav a:active, .usa-sidenav a:focus{
+.usa-sidenav a:hover {
+    background-color: #f1f1f1;
+    color: #050608;
+    text-decoration: none;
+}
+
+.usa-sidenav a:focus {
     background-color: #f1f1f1;
     color: #050608;
     text-decoration: none;
@@ -387,21 +383,24 @@ border-top: none;
      color: #050608;
      text-decoration: none;
 }
-.usa-current-1 .img-top{
+.bs .usa-current-1 .img-top{
    display: inline;
 }
-.img-top {
+ .bs .img-top {
         display: none;
         position: absolute;
         top: 9px;
         left: 21px;
         z-index: 99;
     }
-    .bs:hover, .bs a:active, .bs a:focus .img-top {
+    .bs:hover .img-top {
         display: inline;
 
     }
+  .bs:focus  .img-top {
+        display: inline;
 
+    }
 @media screen and (max-width: 768px) {
     .sidenav-main-1 {
         display: none;
