@@ -351,7 +351,7 @@ background-color:#0a0a0a;
   font-size:15px;
 }
 
-.usa-sidenav a:hover {
+.usa-sidenav a:hover, .usa-sidenav a:active, .usa-sidenav a:focus{
     background-color: #f1f1f1;
     color: #050608;
     text-decoration: none;
@@ -397,7 +397,7 @@ border-top: none;
         left: 21px;
         z-index: 99;
     }
-    .bs:hover .img-top {
+    .bs:hover, .bs a:active, .bs a:focus .img-top {
         display: inline;
 
     }
