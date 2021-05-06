@@ -15,5 +15,5 @@ use-cases-content: rpm/use-cases.html
 capabilities-source-document-type: xls
 lifecycle-source-document-type: xls
 lifecycle-source-document: assets/files/downloads/rpm/Real-Property-Management-Federal-Business-Lifecycle.xlsx
-capabilities-source-document: assets/files/downloads/rpm/Real-Property-Management-Business-capabilities.xlsx
+capabilities-source-document: assets/files/downloads/rpm/Real-Property-Management-Business-Capabilities.xlsx
 ---
