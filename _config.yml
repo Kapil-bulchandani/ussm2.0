@@ -88,14 +88,36 @@ primary_navigation:
           permalink: /fibf/
           show_in_menu: true
           show_in_footer: false
+        - text: 'Electronic Records Management'
+          permalink: /fibf-ERM/
+          show_in_menu: true
+          show_in_footer: false
         - text: 'Financial Management'
           permalink: /fibf-fm/
+          show_in_menu: true
+          show_in_footer: false
+        - text: 'Grants Management'
+          permalink: /fibf-gm/
           show_in_menu: true
           show_in_footer: false
         - text: 'HR Management Services'
           permalink: /fibf-hr/
           show_in_menu: true
           show_in_footer: false
+        - text: 'Compensation and Benefits'
+          permalink: /fibf-hr-cb/
+          show_in_menu: true
+          show_in_footer: false
+          link: true
+          external: false
+          sub: true
+        - text: 'Employee Performance Management'
+          permalink: /fibf-hr-epm/
+          show_in_menu: true
+          show_in_footer: false
+          link: true
+          external: false
+          sub: true
         - text: 'Talent Acquisition'
           permalink: /fibf-hr/
           show_in_menu: true
@@ -110,38 +132,16 @@ primary_navigation:
           link: true
           external: false
           sub: true
-        - text: 'Employee Performance Management'
-          permalink: /fibf-hr-epm/
-          show_in_menu: true
-          show_in_footer: false
-          link: true
-          external: false
-          sub: true
-        - text: 'Compensation and Benefits'
-          permalink: /fibf-hr-cb/
-          show_in_menu: true
-          show_in_footer: false
-          link: true
-          external: false
-          sub: true
         - text: 'Procurement'
           permalink: /fibf-procurement/
           show_in_menu: true
           show_in_footer: false
-        - text: 'Grants Management'
-          permalink: /fibf-gm/
+        - text: 'Real Property Management'
+          permalink: /fibf-RPM/
           show_in_menu: true
           show_in_footer: false
         - text: 'Travel and Expense Management'
           permalink: /fibf-travel/
-          show_in_menu: true
-          show_in_footer: false
-        - text: 'Electronic Records Management'
-          permalink: /fibf-ERM/
-          show_in_menu: true
-          show_in_footer: false
-        - text: 'Real Property Management'
-          permalink: /fibf-RPM/
           show_in_menu: true
           show_in_footer: false
     - text: 'QSMO'
