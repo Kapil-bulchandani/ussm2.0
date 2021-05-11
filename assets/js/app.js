@@ -28,13 +28,7 @@ jQuery(document).ready(function () {
             table: 'grants-capabilities',
             url: '../business-standards-api/grants',
             hasSubsection: false
-        },
-        {
-            accordian: 'procurment-lifecycle',
-            table: 'procurement-capabilities',
-            url: '../business-standards-api/procurement',
-            hasSubsection: false
-        },
+        },       
         {
             accordian: 'travel-lifecycle',
             table: 'travel-capabilities',
