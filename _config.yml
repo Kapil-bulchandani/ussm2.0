@@ -132,7 +132,7 @@ primary_navigation:
           link: true
           external: false
           sub: true
-        - text: 'Procurement'
+        - text: 'Contract Writing'
           permalink: /fibf-procurement/
           show_in_menu: true
           show_in_footer: false
