@@ -93,13 +93,15 @@ This template is for a single page that does not have a date associated with it.
             <a href="{{ site.baseurl }}/{{page.lifecycle-source-document}}">{{page.sub-title}} Business Lifecycle</a>
           </p>
           {% endif %}
+          {% if page.lifecycle-content == null %}
+            <p>Business Standards Under Development.</p>
+          {% endif %}
         </div>
-      </div>
-      {% if page.lifecycle-content %}
-      {% include {{ page.lifecycle-content }} %}
-        {% else %}
-        <p>Business Standards Under Development.</p>
+        {% if page.lifecycle-content %}
+        <div class="desktop:grid-col-12">{% include {{ page.lifecycle-content }} %}</div>
         {% endif %}
+      </div>
+
         <p><a class="text-primary" style="display:flex; justify-content:flex-end;"  href="#top">Back to top</a></p>
       </div>
       
@@ -111,7 +113,6 @@ This template is for a single page that does not have a date associated with it.
             <img src="{{ site.baseurl }}/assets/images/fibf/02.business.capabilities.sm.png" alt="" class="fibf-wheel-image">
           </div>
           <div class="desktop:grid-col-9">
-
             <p><i>Business Capabilities are the outcome-based business needs mapped to Federal government authoritative references, forms, and data standards.</i>
             </p>
             {% if page.capabilities-source-document %}
@@ -119,19 +120,23 @@ This template is for a single page that does not have a date associated with it.
               <a href="{{ site.baseurl }}/{{page.capabilities-source-document}}">{{page.sub-title}} Business Capabilities</a>
             </p>
             {% endif %}
+            {% if page.capabilities-content == null %}
+              <p>Business Standards Under Development.</p>
+            {% endif %}
           </div>
         </div>
         {% if page.capabilities-content %}
-          <div class="usa-accordion usa-accordion--bordered margin-y-5">
-            <div><button class="usa-accordion__button" aria-expanded="true" aria-controls="capabilities"><img src="{{site.baseurl}}/assets/images/compass-regular.png" alt="Business Capabilities Navigation" style="width:32px;vertical-align: middle;margin-right: 10px;margin-top: -3px;">Business Capabilities Navigation</button>
-              <div id="capabilities" class="usa-accordion__content usa-prose">
-                {% include {{ page.capabilities-content }} %}
+          <div class="desktop:grid-col-12">
+            <div class="usa-accordion usa-accordion--bordered margin-y-5">
+              <div><button class="usa-accordion__button" aria-expanded="true" aria-controls="capabilities"><img src="{{site.baseurl}}/assets/images/compass-regular.png" alt="Business Capabilities Navigation" style="width:32px;vertical-align: middle;margin-right: 10px;margin-top: -3px;">Business Capabilities Navigation</button>
+                <div id="capabilities" class="usa-accordion__content usa-prose">
+                  {% include {{ page.capabilities-content }} %}
+                </div>
               </div>
             </div>
-        </div>
-        {% else %}
-        <p>Business Standards Under Development.</p>
+          </div>
         {% endif %}
+
         <p><a class="text-primary" style="display:flex; justify-content:flex-end;"  href="#top">Back to top</a></p>
         </div>
       
