@@ -1,6 +1,6 @@
 ---
 layout: standards
-permalink: /fibf-procurement/
+permalink: /fibf-cw/
 title: Federal Integrated Business Framework - Contract Writing Standards
 sub-title: Contract Writing
 sec-title: Contract Writing Standards Lead
