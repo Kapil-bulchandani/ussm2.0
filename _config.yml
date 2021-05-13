@@ -89,7 +89,7 @@ primary_navigation:
           show_in_menu: true
           show_in_footer: false
         - text: 'Contract Writing'
-          permalink: /fibf-procurement/
+          permalink: /fibf-cw/
           show_in_menu: true
           show_in_footer: false
         - text: 'Electronic Records Management'
