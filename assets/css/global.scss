@@ -281,3 +281,27 @@ span[role="link"]:focus {
 .fibf-wheel-image {
   width: 220px
 }
+
+    .usa-table thead th, .usa-prose > table thead th, .usa-table thead td, .usa-prose > table thead td {
+    background-color: #112e51;
+    color: white;
+    padding: 10px 20px;
+}
+
+.bt-hover:hover {
+    color: black;
+}
+
+@media (min-width: 64em){
+.desktop\:margin-top1 {
+    margin-top: 9.5rem;
+}
+}
+
+@media screen and (max-width: 1314px){
+.bs-icons {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: 3rem;
+}
+}
